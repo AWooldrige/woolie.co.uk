@@ -1,3 +1,6 @@
+domain: woolie.co.uk
+base_url: http://woolie.co.uk
+
 # A list of file extensions that nanoc will consider to be textual rather than
 # binary. If an item with an extension not in this list is found,  the file
 # will be considered as binary.
@@ -57,6 +60,8 @@ data_sources:
     # will have the identifier “/about/” when turned off, but when turned on
     # it will become “/about.html/” instead.
     allow_periods_in_identifiers: false
+
+    encoding: utf-8
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.

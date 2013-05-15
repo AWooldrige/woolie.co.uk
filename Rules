@@ -13,9 +13,32 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don’t filter or layout
+##############################################################################
+# SITEMAP & ROBOTS
+##############################################################################
+['/sitemap/', '/robots'].each do |r|
+    compile r do
+        filter :erb
+    end
+    route r do
+        item.identifier.chop + '.' + item[:extension]
+    end
 end
+
+##############################################################################
+# STYLESHEET
+##############################################################################
+compile '/style/' do
+    filter :erb
+    filter :less
+    filter :rainpress
+end
+route '/style/' do
+    '/assets/css/style' + fingerprint(item[:filename]) + '.css'
+end
+
+
+
 
 compile '*' do
   if item.binary?
@@ -24,10 +47,6 @@ compile '*' do
     filter :erb
     layout 'default'
   end
-end
-
-route '/stylesheet/' do
-  '/style.css'
 end
 
 route '*' do
