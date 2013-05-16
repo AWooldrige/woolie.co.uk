@@ -13,7 +13,7 @@ directories produced have the following basic structure.
     │       └── index.html
     └── index.html
 
-A page (article) to only be served at one URL - a canoncial URL. By default
+A page (article) should only be served at one URL - a canoncial URL. By default
 nanoc will serve the content at the two following URLs:
 
  * /article/example-article/index.html
