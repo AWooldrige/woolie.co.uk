@@ -47,6 +47,7 @@
 <div class="container-narrow">
     <%= yield %>
 
+    <hr>
     <footer class="footer">
         <p class="pull-right"><small>Woolie.co.uk - Tech, Odds and Sods</small></p>
         <p><small>&copy; <%= Date.today.strftime("%Y") %> Alistair Wooldrige</small></p>
@@ -72,7 +73,7 @@ end
         fyre.conv.load({}, [{
             el: 'livefyre-comments',
             network: "livefyre.com",
-            siteId: "319302",
+            siteId: "319285",
             articleId: articleId,
             signed: false,
             collectionMeta: {
