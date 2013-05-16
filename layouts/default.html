@@ -34,7 +34,7 @@
             <a class="brand" href="<%= @items['/'].path %>">Woolie.co.uk</a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                    <% nav_items = ['/'] %>
+                    <% nav_items = ['/', '/about/'] %>
                     <% nav_items.each do |i| %>
                     <li<%= ' class="active"' if item.path == @items[i].path %>><a href="<%= @items[i].path %>"><%= @items[i][:title] %></a></li>
                     <% end %>
