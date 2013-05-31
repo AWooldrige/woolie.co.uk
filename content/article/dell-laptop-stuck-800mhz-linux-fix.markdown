@@ -13,7 +13,7 @@ running extraordinarily slowly, and the CPU governer wouldn't scale above
     current policy: frequency should be within 800 MHz and 800 MHz. The
     governor "performance" may decide which speed to use within this range.
 
-Low and behold, on the next reboot the dreaded message came up:
+On the next reboot the dreaded message came up:
 
     The AC power adapter type cannot be determined. Your system will operate
     slower and the battery will not charge. Please connect a Dell 90W AC
