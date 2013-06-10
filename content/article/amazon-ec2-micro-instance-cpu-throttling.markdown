@@ -11,7 +11,7 @@ shaped/applied.
 </p>
 
 To gain a little more insight, an unscientific load test was performed. The
-test repeatadly performed an MD5 sum on a string (a task that should always use
+test repeatedly performed an MD5 sum on a string (a task that should always use
 a similar number of CPU instructions), recording how many of those it could
 complete in 0.1 second. The test was performed over 10 minutes.
 
