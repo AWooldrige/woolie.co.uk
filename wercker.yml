@@ -1,0 +1,14 @@
+box: wercker/rvm
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: nanoc build
+            code: bundle exec nanoc compile
+deploy:
+    steps:
+        - s3sync:
+            key_id: $AWS_ACCESS_KEY_ID
+            key_secret: $AWS_SECRET_ACCESS_KEY
+            bucket_url: $AWS_BUCKET_URL
+            source_dir: output/
