@@ -3,8 +3,11 @@ build:
     steps:
         - bundle-install
         - script:
-            name: nanoc build
+            name: nanoc compile
             code: bundle exec nanoc compile
+        - script:
+            name: copy to wercker output
+            code: mv output $WERCKER_OUTPUT_DIR
 deploy:
     steps:
         - s3sync:
