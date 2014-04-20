@@ -1,15 +1,15 @@
 {
     "headers": [
         {
-            "path": r".*",
+            "path": ".*",
             "Cache-Control": "max-age=3600"
         },
         {
-            "path": r"^article/.*",
+            "path": "^article/.*",
             "Cache-Control": "max-age=3600"
         },
         {
-            "path": r"^assets/.*",
+            "path": "^assets/.*",
             "Cache-Control": "max-age=31104000"
         }
     ],
