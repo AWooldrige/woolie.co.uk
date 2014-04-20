@@ -10,7 +10,7 @@ build:
             code: mv output/* $WERCKER_OUTPUT_DIR
 deploy:
     steps:
-        - awooldrige/s3sitedeploy@0.1.0:
+        - awooldrige/s3sitedeploy:
             access_key_id: $AWS_ACCESS_KEY_ID
             secret_access_key: $AWS_SECRET_ACCESS_KEY
             bucket_name: $AWS_BUCKET_NAME
