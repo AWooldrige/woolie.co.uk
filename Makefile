@@ -5,4 +5,4 @@ install_deps:
 test:
 
 compile: install_deps
-	bundle exec nanoc compile
+	bundle exec nanoc compile -C

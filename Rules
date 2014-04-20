@@ -14,9 +14,9 @@
 #   because “*” matches zero or more characters.
 
 ##############################################################################
-# SITEMAP & ROBOTS
+# SITEMAP, ROBOTS & S3SITEDEPLOY
 ##############################################################################
-['/sitemap/', '/robots'].each do |r|
+['/sitemap/', '/robots/', '/s3sitedeploy/'].each do |r|
     compile r do
         filter :erb
     end
