@@ -1,0 +1,20 @@
+{
+    "headers": [
+        {
+            "path": r".*",
+            "Cache-Control": "max-age=3600"
+        },
+        {
+            "path": r"^article/.*",
+            "Cache-Control": "max-age=3600"
+        },
+        {
+            "path": r"^assets/.*",
+            "Cache-Control": "max-age=31104000"
+        }
+    ],
+    "gzip": [
+        "text/html", "text/css", "text/plain", "text/yaml",
+         "application/javascript"
+    ]
+}
