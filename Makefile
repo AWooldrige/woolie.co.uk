@@ -3,6 +3,7 @@ install_deps:
 	bundle install --path vendor/bundle
 	
 test:
-
+	echo 'blah'
+	
 compile: install_deps
 	bundle exec nanoc compile -C
