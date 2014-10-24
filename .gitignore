@@ -1,0 +1,6 @@
+*.swp
+output/
+tmp/
+crash.log
+.bundle/
+vendor/
