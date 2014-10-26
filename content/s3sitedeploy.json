@@ -1,20 +1,20 @@
 {
-    "headers": [
+    "object_specific": [
         {
             "path": ".*",
-            "Cache-Control": "max-age=3600"
+            "headers": { "Cache-Control": "max-age=3600" }
         },
         {
             "path": "^article/.*",
-            "Cache-Control": "max-age=3600"
+            "headers": { "Cache-Control": "max-age=3600" }
         },
         {
             "path": "^assets/.*",
-            "Cache-Control": "max-age=31104000"
+            "headers": { "Cache-Control": "max-age=31104000" }
         }
     ],
-    "gzip": [
+    "gzip_mimetypes": [
         "text/html", "text/css", "text/plain", "text/yaml",
-         "application/javascript"
+        "application/javascript"
     ]
 }
