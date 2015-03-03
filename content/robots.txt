@@ -1,1 +1,3 @@
 Sitemap: <%= @items['/sitemap/'].path %>
+User-agent: ia_archiver
+Disallow: /
