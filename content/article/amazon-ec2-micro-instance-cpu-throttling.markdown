@@ -17,11 +17,11 @@ complete in 0.1 second. The test was performed over 10 minutes.
 
 
 ### Micro Instance
-<%= imageVerbatim(item.identifier + 'micro-results/') %>
+<%= imageVerbatim(item.identifier.without_ext + '/micro-results.png') %>
 
 
 ### Small Instance
-<%= imageVerbatim(item.identifier + 'small-results/') %>
+<%= imageVerbatim(item.identifier.without_ext + '/small-results.png') %>
 
 Performing the same load test on a small instance produces results that you'd
 expect from a non-throttled instance. The scales are the same as the micro
@@ -41,17 +41,17 @@ graph  for comparison:
 #### Micro Instance
 
  * Load test script output (that fed into gnuplot):
-   [micro-raw-data.txt](<%= @items[item.identifier + 'micro-raw-data/'].path %>)
+   [micro-raw-data.txt](<%= @items[item.identifier.without_ext + '/micro-raw-data.txt'].path %>)
  * Concurrent `mpstat` output:
-   [micro-mpstat.txt](<%= @items[item.identifier + 'micro-mpstat/'].path %>)
+   [micro-mpstat.txt](<%= @items[item.identifier.without_ext + '/micro-mpstat.txt'].path %>)
  * Performed 48128 MD5 sums
 
 #### Small Instance
 
  * Load test script output (that fed into gnuplot):
-   [small-raw-data.txt](<%= @items[item.identifier + 'small-raw-data/'].path %>)
+   [small-raw-data.txt](<%= @items[item.identifier.without_ext + '/small-raw-data.txt'].path %>)
  * Concurrent `mpstat` output:
-   [small-mpstat.txt](<%= @items[item.identifier + 'small-mpstat/'].path %>)
+   [small-mpstat.txt](<%= @items[item.identifier.without_ext + '/small-mpstat.txt'].path %>)
  * Performed 96144 MD5 sums
 
 #### Load Testing Script
