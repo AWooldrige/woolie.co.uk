@@ -8,10 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alistair Wooldrige">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="author" href="https://plus.google.com/103905050175116936578/posts"/>
 
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="all" href="<%= @items['/style/'].path %>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<%= @items['/style.css'].path %>" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -19,17 +18,7 @@
     <![endif]-->
 
     <!-- TODO: Add favicon -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-24950612-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    <!-- TODO: Add Google Analytics with IP anonymisation -->
 </head>
 <body>
 
@@ -41,10 +30,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="<%= @items['/'].path %>">Woolie.co.uk</a>
+            <a class="brand" href="<%= @items['/index.html'].path %>">Woolie.co.uk</a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                    <% nav_items = ['/', '/about/'] %>
+                    <% nav_items = ['/index.html', '/about.html'] %>
                     <% nav_items.each do |i| %>
                     <li<%= ' class="active"' if item.path == @items[i].path %>><a href="<%= @items[i].path %>"><%= @items[i][:title] %></a></li>
                     <% end %>
@@ -68,31 +57,5 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-<%
-if item[:"Legacy WP ID"] then
-    livefyre_article_id = item[:"Legacy WP ID"]
-elsif item[:kind] == "article" then
-    livefyre_article_id = item.identifier
-end
-%>
-<% unless livefyre_article_id.nil? then %>
-    <script type="text/javascript" src="//zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-    <script type="text/javascript">
-    (function () {
-        var articleId = "<%= livefyre_article_id %>";
-        fyre.conv.load({}, [{
-            el: 'livefyre-comments',
-            network: "livefyre.com",
-            siteId: "319285",
-            articleId: articleId,
-            signed: false,
-            collectionMeta: {
-                articleId: articleId,
-                url: fyre.conv.load.makeCollectionUrl(),
-            }
-        }], function() {});
-    }());
-    </script>
-<% end %>
 </body>
 </html>

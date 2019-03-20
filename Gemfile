@@ -1,9 +1,7 @@
-source "https://rubygems.org"
-
-gem "nanoc"
-gem "rainpress"
-gem "less"
-gem "therubyracer"
-gem "nanoc-cachebuster"
-gem "builder"
-gem "kramdown"
+source "https://rubygems.org" do
+    gem 'nanoc', '~> 4.11'
+    gem "builder"  # Needed for XML sitemap
+    gem "kramdown"
+    gem "adsf"  # Local webserver for viewing
+    gem "nanoc-live"
+end

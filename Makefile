@@ -1,5 +1,4 @@
 vendor: Gemfile
-	bundle version || sudo gem install bundler
 	bundle install --path vendor/bundle
 
 output: vendor nanoc.yaml Rules $(shell find content lib layouts)
@@ -7,8 +6,12 @@ output: vendor nanoc.yaml Rules $(shell find content lib layouts)
 
 .PHONY: view
 view: output
-	cd output; ruby -run -e httpd . -p 8080
+	bundle exec nanoc view -o 0.0.0.0
 
 .PHONY: clean
 clean:
 	rm -rf output vendor
+
+.PHONY: bundle-update
+bundle-update:
+	bundle update
