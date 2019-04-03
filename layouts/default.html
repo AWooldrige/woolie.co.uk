@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-
     <title><%= @item[:title] %> - Woolie.co.uk</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alistair Wooldrige">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="all" href="<%= @items['/style.css'].path %>" />
+    <!-- Get woffs downloaded as quick as possible -->
+    <link rel="preload" href="<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff2'].path %>" as="font" type="font/woff2">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Required Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="<%= @items['/style.css'].path %>" />
 
     <!-- TODO: Add favicon -->
     <!-- TODO: Add Google Analytics with IP anonymisation -->
 </head>
 <body>
 
-<div class="navbar navbar-static-top navbar-inverse">
-    <div class="navbar-inner">
-        <div class="container-narrow">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+    <nav>
+        <div class="site-narrowing-container navbar">
+            <a class="navbar-logo" href="<%= @items['/index.html'].path %>">
+                <span class="logo-lg">woolie</span><span class="logo-sm">.co.uk</span>
             </a>
-            <a class="brand" href="<%= @items['/index.html'].path %>">Woolie.co.uk</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                    <% nav_items = ['/index.html', '/about.html'] %>
-                    <% nav_items.each do |i| %>
-                    <li<%= ' class="active"' if item.path == @items[i].path %>><a href="<%= @items[i].path %>"><%= @items[i][:title] %></a></li>
-                    <% end %>
-                </ul>
+            <div class="nav-links">
+                <% nav_items = ['/index.html', '/about.html'] %>
+                <% nav_items.each do |i| %>
+                    <%= link_to(@items[i][:title], @items[i], class: @item.path == @items[i].path ? 'nav-link active' : 'nav-link') %>
+                <% end %>
             </div>
         </div>
-    </div>
-</div>
+    </nav>
 
-<div class="container-narrow">
+<div class="site-narrowing-container site-content">
     <%= yield %>
 
-    <hr>
-    <footer class="footer">
-        <p class="pull-right"><small>Woolie.co.uk - Tech, Odds and Sods</small></p>
-        <p><small>&copy; <%= Date.today.strftime("%Y") %> Alistair Wooldrige</small></p>
+    <footer>
+        &copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige. Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader.
     </footer>
 </div>
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

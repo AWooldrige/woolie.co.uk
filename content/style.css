@@ -1,14 +1,188 @@
-/* Custom container */
-.container-narrow {
-    margin: 0 auto;
-    max-width: 700px;
+<%= @items['/lib/bootstrap/4.3.1/css/bootstrap-reboot.min.css'].compiled_content %>
+<%
+    # Colour theme
+    clr_white = '#F5F5F5'
+    clr_light_grey = '#F0ECEB'
+    clr_darker_grey = '#CECECE'
+    clr_black = '#283018'
+
+    clr_green = '#729F98'
+    clr_brown = '#AA863A'
+    clr_blue = '#385674'
+%>
+
+<%
+###############################################################################
+# Download WOFF and WOFF2 web font files using:
+# https://github.com/neverpanic/google-font-download
+#
+# Font-face supports most browsers:
+# https://css-tricks.com/snippets/css/using-font-face/
+#
+###############################################################################
+%>
+@font-face {
+    font-family: 'Alegraya Sans';
+    font-style: normal;
+    src:
+        url('<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff2'].path %>') format('woff2'),
+        url('<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff'].path %>') format('woff');
 }
-.container-narro h2 {
+
+body {
+    font-family: 'Alegraya Sans', sans-serif;
+    font-size: 1rem;
+    color: <%= clr_black %>;
+    background-color: <%= clr_light_grey %>;
+}
+.site-content a {
+  color: <%= clr_blue %>;
+}
+.site-content a:hover {
+  color: <%= clr_blue %>;
+  text-decoration: underline;
+}
+.site-content a:active {
+  color: <%= clr_blue %>;
+  text-decoration: underline;
+}
+.site-content a:visited {
+  color: <%= clr_blue %>;
+}
+
+<%
+###############################################################################
+# Layout
+###############################################################################
+%>
+.site-narrowing-container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+<%
+###############################################################################
+# NAVIGATION BAR
+###############################################################################
+%>
+nav {
+    background-color: <%= clr_blue %>;
+    border-bottom: 2px solid <%= clr_white %>;
+    color: <%= clr_light_grey %>;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo {
+    font-family: Courier New, monospace;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo-lg { font-size: 1.8rem; }
+.logo-sm { font-size: 0.6rem; }
+
+.nav-links {
+    margin-left: auto;
+}
+.navbar a {
+    color: <%= clr_light_grey %>;
+}
+.navbar a:visited {
+    color: <%= clr_light_grey %>;
+}
+.navbar a:hover {
+    color: <%= clr_white %>;
+    text-decoration: underline;
+}
+.navbar a:active {
+    color: <%= clr_blue %>;
+    text-decoration: underline;
+}
+.navbar .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.navbar .nav-links a {
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+}
+
+<%
+###############################################################################
+# MAIN PAGE CONTENT
+###############################################################################
+%>
+.site-content .lead-spacer {
+    margin-top: 1.8rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.3rem;
+    margin-top: 1.2rem;
+    font-weight: normal;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.5rem; }
+
+hr {
+    border: 0;
+    border-top: 1px solid <%= clr_darker_grey %>;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
-.container-narrow > hr {
-    margin: 30px 0;
+img {
+    max-width: 100%;
+    height: auto;
 }
-.navbar-static-top {
-    margin-bottom: 25px;
+code {
+    color: <%= clr_black %>;
+    background-color: <%= clr_white %>;
+    padding: 0.2rem 0.2rem 0.1rem 0.3rem; /* T L B R */
+    font-size: 0.8rem;
+}
+pre {
+    color: <%= clr_black %>;
+    background-color: <%= clr_white %>;
+    border-left: 4px solid <%= clr_blue %>;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+<%
+###############################################################################
+# FOOTER
+###############################################################################
+%>
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1px solid <%= clr_darker_grey %>;
+    font-size: 0.8rem;
+}
+
+
+<%
+###############################################################################
+# ENHANCEMENTS FOR LARGER SCREENS
+# Principle here is to start mobile first, then enhance for larger devices
+###############################################################################
+%>
+@media (min-width: 992px) {
+    body { font-size: 1.2rem; }
+    .logo-lg { font-size: 2.2rem; }
+    .logo-sm { font-size: 0.9rem; }
+    h1 { font-size: 2.4rem; margin-top: 1.5rem; }
+    h2 { font-size: 2rem; margin-top: 1.5rem; }
+    h3 { font-size: 1.8rem; margin-top: 1.5rem; }
+    pre { padding: 1.2rem; }
+    footer { font-size: 1rem; }
 }

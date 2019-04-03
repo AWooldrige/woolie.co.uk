@@ -12,7 +12,7 @@ end
 
 compile '/style.css' do
     filter :erb
-    write '/assets/css/style-' + contenthash(item) + '.css'
+    write '/assets/css' + item.identifier.without_ext + '-' + contenthash(item) + '.css'
 end
 
 ###############################################################################
@@ -35,16 +35,19 @@ end
 # Default
 ##############################################################################
 compile '/index.html' do
-  filter :erb
-  layout '/default.html'
-  write '/index.html'
+    filter :erb
+    layout '/default.html'
+    write '/index.html'
 end
 
 compile '/**/*.html' do
-  filter :erb
-  layout '/default.html'
-  write item.identifier.without_ext + '/index.html'
+    filter :erb
+    layout '/default.html'
+    write item.identifier.without_ext + '/index.html'
 end
+
+passthrough '/lib/**/*'
+passthrough '/s3sup.toml'
 
 ##############################################################################
 # Results for layout files

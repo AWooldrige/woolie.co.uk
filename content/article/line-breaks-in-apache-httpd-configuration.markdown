@@ -6,7 +6,7 @@ kind: article
 
 It's possible to split Apache httpd configuration directives over multiple
 lines. Just use the backslash (`\`) to mark a continuation line like you'd do
-in many languages and configruation formats.
+in many languages and configuration formats.
 
 For example use to break up a long ProxyPass:
 

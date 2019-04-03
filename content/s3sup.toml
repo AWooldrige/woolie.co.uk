@@ -1,0 +1,17 @@
+[aws]
+region_name = 'eu-west-1'
+s3_bucket_name = 'www.woolie.co.uk'
+
+
+[[path_specific]]
+path = '^.*$'
+Cache-Control = 'max-age=600'
+
+[[path_specific]]
+path = '^(assets|lib)/.*$'
+Cache-Control = 'max-age=31104000'
+
+
+[mimetype_overrides]
+'.woff' = 'font/woff'
+'.woff2' = 'font/woff2'  # This one isn't in mimetypes yet!

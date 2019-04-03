@@ -3,7 +3,8 @@ module ImageHelper
         item = @items[itemIdentifier]
         img = '<img src="' + item.path(:rep => size) + '" ' \
                    'alt="' + item[:title] + '" ' \
-                   'title="' + item[:title] + '">'
+                   'title="' + item[:title] + '" />'
+        return img
     end
 end
 
