@@ -10,9 +10,15 @@
     end
 end
 
-compile '/style.css' do
+compile '/assets/style.css' do
     filter :erb
-    write '/assets/css' + item.identifier.without_ext + '-' + contenthash(item) + '.css'
+    write item.identifier.without_ext + '-' + contenthash(item) + '.css'
+end
+compile '/assets/*.svg' do
+    write item.identifier.without_ext + '-' + contenthash(item) + '.svg'
+end
+compile '/assets/favicons/*' do
+    write item.identifier.without_ext + '.' + contenthash(item) + '.' + item.identifier.ext
 end
 
 ###############################################################################

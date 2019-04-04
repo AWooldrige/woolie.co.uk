@@ -9,6 +9,7 @@
     clr_green = '#729F98'
     clr_brown = '#AA863A'
     clr_blue = '#385674'
+    clr_logo_gold = '#D4B715'
 %>
 
 <%
@@ -71,22 +72,27 @@ body {
 %>
 nav {
     background-color: <%= clr_blue %>;
-    border-bottom: 2px solid <%= clr_white %>;
+    border-bottom: 4px solid <%= clr_logo_gold %>;
     color: <%= clr_light_grey %>;
 }
 .navbar {
+    font-family: Courier New, monospace;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-.navbar-logo {
-    font-family: Courier New, monospace;
-    display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.logo-lg { font-size: 1.8rem; }
+.navbar-logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.navbar-logo img {
+    margin-right: 10px;
+}
+.logo-lg { font-size: 1.6rem; }
 .logo-sm { font-size: 0.6rem; }
 
 .nav-links {
@@ -178,8 +184,9 @@ footer {
 %>
 @media (min-width: 992px) {
     body { font-size: 1.2rem; }
-    .logo-lg { font-size: 2.2rem; }
-    .logo-sm { font-size: 0.9rem; }
+    .navbar { padding-top: 20px; padding-bottom: 15px; }
+    .logo-lg { font-size: 2rem; }
+    .logo-sm { font-size: 0.8rem; }
     h1 { font-size: 2.4rem; margin-top: 1.5rem; }
     h2 { font-size: 2rem; margin-top: 1.5rem; }
     h3 { font-size: 1.8rem; margin-top: 1.5rem; }

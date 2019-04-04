@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title><%= @item[:title] %> - Woolie.co.uk</title>
+    <head>
+        <!-- s3sup sets content type already, but no harm -->
+        <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alistair Wooldrige">
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- IP anonymisation added with: https://developers.google.com/analytics/devguides/collection/gtagjs/ip-anonymization -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24950612-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-24950612-1', { 'anonymize_ip': true });
+        </script>
 
-    <!-- Get woffs downloaded as quick as possible -->
-    <link rel="preload" href="<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff2'].path %>" as="font" type="font/woff2">
+        <title><%= @item[:title] %> - Woolie.co.uk</title>
 
-    <!-- Required Bootstrap meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Get fonts downloaded as quickly as possible -->
+        <link rel="preload" href="<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff2'].path %>" as="font" type="font/woff2">
+        <link rel="stylesheet" type="text/css" href="<%= @items['/assets/style.css'].path %>" />
 
-    <link rel="stylesheet" type="text/css" href="<%= @items['/style.css'].path %>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Alistair Wooldrige">
+        <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>. Uploaded with s3sup.">
 
-    <!-- TODO: Add favicon -->
-    <!-- TODO: Add Google Analytics with IP anonymisation -->
-</head>
-<body>
-
-    <nav>
-        <div class="site-narrowing-container navbar">
-            <a class="navbar-logo" href="<%= @items['/index.html'].path %>">
-                <span class="logo-lg">woolie</span><span class="logo-sm">.co.uk</span>
-            </a>
-            <div class="nav-links">
-                <% nav_items = ['/index.html', '/about.html'] %>
-                <% nav_items.each do |i| %>
-                    <%= link_to(@items[i][:title], @items[i], class: @item.path == @items[i].path ? 'nav-link active' : 'nav-link') %>
-                <% end %>
+        <!-- I generated these with this handy site: https://realfavicongenerator.net -->
+        <link rel="apple-touch-icon" sizes="180x180" href="<%= @items['/assets/favicons/apple-touch-icon.png'].path %>">
+        <link rel="icon" type="image/png" sizes="32x32" href="<%= @items['/assets/favicons/favicon-32x32.png'].path %>">
+        <link rel="icon" type="image/png" sizes="16x16" href="<%= @items['/assets/favicons/favicon-16x16.png'].path %>">
+        <link rel="manifest" href="<%= @items['/assets/favicons/site.webmanifest'].path %>">
+        <link rel="mask-icon" href="<%= @items['/assets/favicons/safari-pinned-tab.svg'].path %>" color="#d4b715">
+        <link rel="shortcut icon" href="<%= @items['/assets/favicons/favicon.ico'].path %>">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="<%= @items['/assets/favicons/browserconfig.xml'].path %>">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <nav>
+            <div class="site-narrowing-container navbar">
+                <a class="navbar-logo" href="<%= @items['/index.html'].path %>">
+                    <img src="<%= @items['/assets/logo.optimised.svg'].path %>" width="42" height="60" viewbox="0 0 42 60" alt="Woolie.co.uk logo" />
+                    <div class="navbar-logo-text">
+                        <span class="logo-lg">woolie</span><span class="logo-sm">.co.uk</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <% nav_items = ['/index.html', '/about.html'] %>
+                    <% nav_items.each do |i| %>
+                        <%= link_to(@items[i][:title], @items[i], class: @item.path == @items[i].path ? 'nav-link active' : 'nav-link') %>
+                    <% end %>
+                </div>
             </div>
+        </nav>
+
+        <div class="site-narrowing-container site-content">
+            <%= yield %>
+
+            <footer>
+                &copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige. Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader.
+            </footer>
         </div>
-    </nav>
-
-<div class="site-narrowing-container site-content">
-    <%= yield %>
-
-    <footer>
-        &copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige. Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader.
-    </footer>
-</div>
-</body>
+    </body>
 </html>
