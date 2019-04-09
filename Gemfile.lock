@@ -25,6 +25,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    exif (2.2.0)
     ffi (1.10.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
@@ -71,6 +72,7 @@ PLATFORMS
 DEPENDENCIES
   adsf!
   builder!
+  exif!
   kramdown!
   nanoc (~> 4.11)!
   nanoc-live!
