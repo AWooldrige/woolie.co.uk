@@ -162,6 +162,20 @@ pre {
     padding: 0.8rem;
     font-size: 0.8rem;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.gallery a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 <%
 ###############################################################################
 # FOOTER
@@ -183,7 +197,7 @@ footer {
 ###############################################################################
 %>
 @media (min-width: 992px) {
-    body { font-size: 1.2rem; }
+    body { font-size: 1.3rem; }
     .navbar { padding-top: 20px; padding-bottom: 15px; }
     .logo-lg { font-size: 2rem; }
     .logo-sm { font-size: 0.8rem; }

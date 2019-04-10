@@ -3,11 +3,23 @@ require 'exif'
 Nanoc::Check.define(:no_geotags) do
     @output_filenames.each do |filename|
         if filename.downcase =~ /(jpg|jpeg)$/
-            data = Exif::Data.new(File.open(filename))
-            if ! data[:gps].empty?
-                puts data[:gps]
-                add_issue("Geotags detected", subject: filename)
+            begin
+                data = Exif::Data.new(File.open(filename))
+                if ! data[:gps].empty?
+                    puts data[:gps]
+                    add_issue("Geotags detected", subject: filename)
+                end
+            rescue Exif::NotReadable
+                puts 'Could not read any EXIF from: ' + filename
             end
+        end
+    end
+end
+
+Nanoc::Check.define(:no_todos) do
+    @output_filenames.each do |filename|
+        if filename =~ /html$/ && File.read(filename).match(/TODO/)
+            add_issue("TODO string detected", subject: filename)
         end
     end
 end

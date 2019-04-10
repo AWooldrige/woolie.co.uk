@@ -1,3 +1,5 @@
+require 'exif'
+
 class Thumbnails < Nanoc::Filter
 
     identifier :thumbnails
@@ -19,29 +21,19 @@ end
 
 module ImageHelper
 
-    def imageThumbnail(itemIdentifier, size=:small)
+    def imageThumbnail(itemIdentifier, size=:default)
         item = @items[itemIdentifier]
-        img = '<img src="' + item.path(:rep => size) + '" ' \
-                   'title="' + item[:title] + '" ' \
-                   'class="img-thumbnail" ' \
-                   'title="' + item[:title] + '">'
-        '<a href="' + item.path + '">' + img + '</a>'
-    end
 
-    def image(itemIdentifier, size=:small)
-        item = @items[itemIdentifier]
         img = '<img src="' + item.path(:rep => size) + '" ' \
-                   'title="' + item[:title] + '" ' \
-                   'class="img-fluid" ' \
-                   'title="' + item[:title] + '">'
-        return img
+                   'alt="' + item[:title] + '" ' \
+                    '/>'
+        return '<a href="' + item.path + '">' + img + '</a>'
     end
 
     def imageVerbatim(itemIdentifier, size=:default)
         item = @items[itemIdentifier]
         img = '<img src="' + item.path(:rep => size) + '" ' \
-                   'alt="' + item[:title] + '" ' \
-                   'title="' + item[:title] + '" />'
+                   'alt="' + item[:title] + '" />'
         return img
     end
 

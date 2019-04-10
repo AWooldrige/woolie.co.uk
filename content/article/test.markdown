@@ -84,13 +84,22 @@ imageVerbatim(
 Next up, two images filtered down for size, both with captions (well not yet)
 and on the same row:
 
+<div class='gallery'>
 <%=
 imageThumbnail(
     item.identifier.without_ext +
-    '/bump-collaboration-collegues.jpg',
-    :w960
+    '/bump-collaboration-colleagues.jpg',
+    :w550
 )
 %>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/camera-coffee-composition.jpg',
+    :w550
+)
+%>
+</div>
 
 
 ### H5 level heading
