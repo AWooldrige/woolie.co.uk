@@ -6,7 +6,8 @@ sitemap: true
 
 <h2>All Articles</h2>
 <ul>
-<% sorted_articles.each do |article| %>
+<% selected_articles = sorted_articles.select{ |i| i[:sitemap] != false } %>
+<% selected_articles.each do |article| %>
     <li><%= link_to article[:title], article.path %> - <%= article[:created_at].strftime('%B %-d, %Y') %></li>
 <% end %>
 </ul>

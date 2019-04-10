@@ -1,2 +1,5 @@
-<%= xml_sitemap :items => @items.select{ |i| i[:sitemap] || i[:kind] == 'article' } %>
-
+<%=
+    xml_sitemap :items => @items.select{
+        |i| i[:sitemap] || (i[:kind] == 'article' && (i[:sitemap] != false))
+    }
+%>

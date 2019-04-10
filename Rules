@@ -32,6 +32,11 @@ compile '/article/*.markdown' do
     write item.identifier.without_ext + '/index.html'
 end
 
+compile '/article/*/*.jpg', rep: :w960 do
+  filter :thumbnails, width: 960
+  write item.identifier.without_ext + '-thumbnail-w960.' + item.identifier.ext
+end
+
 compile '/article/*/*' do
     write item.identifier.to_s
 end
