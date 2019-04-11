@@ -32,19 +32,15 @@ compile '/article/*.markdown' do
     write item.identifier.without_ext + '/index.html'
 end
 
-compile '/article/*/*.jpg', rep: :w1140 do
-  filter :thumbnails, width: 1140
-  write item.identifier.without_ext + '-thumbnail-w1140.' + item.identifier.ext
+
+compile '/article/*/*.jpg', rep: :w900 do
+  filter :thumbnails, width: 900
+  write item.identifier.without_ext + '-thumbnail-w900.' + item.identifier.ext
 end
 
-compile '/article/*/*.jpg', rep: :w800 do
-  filter :thumbnails, width: 800
-  write item.identifier.without_ext + '-thumbnail-w800.' + item.identifier.ext
-end
-
-compile '/article/*/*.jpg', rep: :w550 do
-  filter :thumbnails, width: 550
-  write item.identifier.without_ext + '-thumbnail-w550.' + item.identifier.ext
+compile '/article/*/*.jpg', rep: :w400 do
+  filter :thumbnails, width: 400
+  write item.identifier.without_ext + '-thumbnail-w400.' + item.identifier.ext
 end
 
 compile '/article/*/*' do

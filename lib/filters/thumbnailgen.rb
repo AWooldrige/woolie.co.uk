@@ -21,13 +21,16 @@ end
 
 module ImageHelper
 
-    def imageThumbnail(itemIdentifier, size=:default)
+    def imageThumbnail(itemIdentifier, size=:default, caption=true)
         item = @items[itemIdentifier]
 
-        img = '<img src="' + item.path(:rep => size) + '" ' \
-                   'alt="' + item[:title] + '" ' \
-                    '/>'
-        return '<a href="' + item.path + '">' + img + '</a>'
+        # TODO: Error out descriptively if title or caption don't exist
+        html = '<img src="' + item.path(:rep => size) + '" alt="' + item[:title] + '" />'
+        html = '<a href="' + item.path + '">' + html + '</a>'
+        if caption
+            html = '<figure class="captioned-image">' + html + '<figcaption>' + item[:caption] + '</figcaption></figure>'
+        end
+        return html
     end
 
     def imageVerbatim(itemIdentifier, size=:default)

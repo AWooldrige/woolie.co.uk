@@ -89,14 +89,14 @@ and on the same row:
 imageThumbnail(
     item.identifier.without_ext +
     '/bump-collaboration-colleagues.jpg',
-    :w550
+    :w400
 )
 %>
 <%=
 imageThumbnail(
     item.identifier.without_ext +
     '/camera-coffee-composition.jpg',
-    :w550
+    :w400
 )
 %>
 </div>
