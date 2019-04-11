@@ -32,11 +32,23 @@
         url('<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff'].path %>') format('woff');
 }
 
+html {
+    height: 100%;
+}
 body {
     font-family: 'Alegraya Sans', sans-serif;
     font-size: 1rem;
     color: <%= clr_black %>;
     background-color: <%= clr_light_grey %>;
+
+    /* This is to get a 'sticky footer', make a columnar flexbox */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.site-content {
+    /* Main site content should grow to fill, not the header or footer */
+    flex: 1 0 auto;
 }
 .site-content a {
   color: <%= clr_blue %>;
@@ -75,13 +87,12 @@ body {
 nav, footer {
     background-color: <%= clr_blue %>;
     color: <%= clr_light_grey %>;
+
+    /* Main site content should grow to fill, not the header or  footer */
+    flex: 0 1 auto;
 }
 nav {
     border-bottom: 4px solid <%= clr_logo_gold %>;
-}
-footer {
-    border-top: 4px solid <%= clr_logo_gold %>;
-    padding-top: 10px;
 }
 
 .header-footer {
@@ -89,8 +100,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .navbar-logo {
@@ -98,6 +107,7 @@ footer {
     display: flex;
     align-items: center;
     font-family: Courier New, monospace;
+    margin: 10px 0px 10px 10px; /* T L B R */
 }
 .navbar-logo img {
     margin-right: 10px;
@@ -105,9 +115,6 @@ footer {
 .logo-lg { font-size: 1.6rem; }
 .logo-sm { font-size: 0.6rem; }
 
-.nav-links {
-    margin-left: auto;
-}
 .header-footer a {
     color: <%= clr_light_grey %>;
 }
@@ -126,13 +133,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 10px 10px 10px 0px; /* T L B R */
+    font-size: 1rem;
 }
 .navbar .nav-links a {
     display: inline-block;
     background-color: <%= clr_nav_blue %>;
     margin-right: 5px;
-    font-size: 1.2rem;
     padding: 4px 12px 4px 12px;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 4px solid <%= clr_logo_gold %>;
+    padding: 10px 0px 10px 0px;
+}
+footer p {
+    margin: 10px 0px 10px 0px; /* T L B R */
 }
 
 <%
@@ -200,6 +217,7 @@ pre {
 @media (min-width: 992px) {
     body { font-size: 1.3rem; }
     .navbar { padding-top: 20px; padding-bottom: 15px; }
+    .navbar .nav-links { font-size: 1.2rem; }
     .logo-lg { font-size: 2rem; }
     .logo-sm { font-size: 0.8rem; }
     h1 { font-size: 2.4rem; margin-top: 1.5rem; }
