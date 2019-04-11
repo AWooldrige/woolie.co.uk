@@ -1,3 +1,4 @@
+/* Include just the Normalize.css part from Bootstrap */
 <%= @items['/lib/bootstrap/4.3.1/css/bootstrap-reboot.min.css'].compiled_content %>
 <%
     # Colour theme
@@ -9,6 +10,7 @@
     clr_green = '#729F98'
     clr_brown = '#AA863A'
     clr_blue = '#385674'
+    clr_nav_blue = '#496684'
     clr_logo_gold = '#D4B715'
 %>
 
@@ -67,16 +69,22 @@ body {
 
 <%
 ###############################################################################
-# NAVIGATION BAR
+# NAVIGATION BAR AND FOOTER
 ###############################################################################
 %>
-nav {
+nav, footer {
     background-color: <%= clr_blue %>;
-    border-bottom: 4px solid <%= clr_logo_gold %>;
     color: <%= clr_light_grey %>;
 }
-.navbar {
-    font-family: Courier New, monospace;
+nav {
+    border-bottom: 4px solid <%= clr_logo_gold %>;
+}
+footer {
+    border-top: 4px solid <%= clr_logo_gold %>;
+    padding-top: 10px;
+}
+
+.header-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,10 +92,12 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .navbar-logo {
     display: inline-block;
     display: flex;
     align-items: center;
+    font-family: Courier New, monospace;
 }
 .navbar-logo img {
     margin-right: 10px;
@@ -98,17 +108,17 @@ nav {
 .nav-links {
     margin-left: auto;
 }
-.navbar a {
+.header-footer a {
     color: <%= clr_light_grey %>;
 }
-.navbar a:visited {
+.header-footer a:visited {
     color: <%= clr_light_grey %>;
 }
-.navbar a:hover {
+.header-footer a:hover {
     color: <%= clr_white %>;
     text-decoration: underline;
 }
-.navbar a:active {
+.header-footer a:active {
     color: <%= clr_blue %>;
     text-decoration: underline;
 }
@@ -119,7 +129,10 @@ nav {
 }
 .navbar .nav-links a {
     display: inline-block;
-    padding: 10px 15px 10px 15px;
+    background-color: <%= clr_nav_blue %>;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    padding: 4px 12px 4px 12px;
 }
 
 <%
@@ -176,18 +189,6 @@ pre {
     margin-bottom: 10px;
 }
 
-<%
-###############################################################################
-# FOOTER
-###############################################################################
-%>
-footer {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 20px;
-    border-top: 1px solid <%= clr_darker_grey %>;
-    font-size: 0.8rem;
-}
 
 
 <%

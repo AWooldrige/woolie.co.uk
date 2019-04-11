@@ -1,4 +1,4 @@
-vendor: Gemfile
+vendor: Gemfile Gemfile.lock
 	bundle install --path vendor/bundle
 
 output: vendor nanoc.yaml Rules $(shell find content lib layouts)

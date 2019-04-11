@@ -37,7 +37,7 @@
     </head>
     <body>
         <nav>
-            <div class="site-narrowing-container navbar">
+            <div class="site-narrowing-container header-footer navbar">
                 <a class="navbar-logo" href="<%= @items['/index.html'].path %>">
                     <img src="<%= @items['/assets/logo.optimised.svg'].path %>" width="42" height="60" viewbox="0 0 42 60" alt="Woolie.co.uk logo" />
                     <div class="navbar-logo-text">
@@ -56,9 +56,12 @@
         <div class="site-narrowing-container site-content">
             <%= yield %>
 
-            <footer>
-                &copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige. Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader.
-            </footer>
         </div>
+        <footer>
+            <div class="header-footer site-narrowing-container">
+                <p>&copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige.</p>
+                <p>Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader.</p>
+            </div>
+        </footer>
     </body>
 </html>
