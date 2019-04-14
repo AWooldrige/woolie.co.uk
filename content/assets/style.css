@@ -152,6 +152,9 @@ footer {
 footer p {
     margin: 10px 0px 10px 0px;
 }
+footer a {
+    text-decoration: underline;
+}
 
 <%
 ###############################################################################
@@ -163,7 +166,7 @@ footer p {
 }
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.3rem;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
     font-weight: normal;
 }
 h1 { font-size: 2rem; }
@@ -245,9 +248,9 @@ pre {
     .navbar .nav-links { font-size: 1.2rem; }
     .logo-lg { font-size: 2rem; }
     .logo-sm { font-size: 0.8rem; }
-    .site-content h1 { font-size: 2.4rem; margin-top: 1.5rem; }
-    .site-content h2 { font-size: 2rem; margin-top: 1.5rem; }
-    .site-content h3 { font-size: 1.8rem; margin-top: 1.5rem; }
+    .site-content h1 { font-size: 2.4rem; margin-top: 2.3rem; }
+    .site-content h2 { font-size: 2rem; margin-top: 2.3rem; }
+    .site-content h3 { font-size: 1.8rem; margin-top: 2.3rem; }
     .site-content p { line-height: 2.2rem; }
     pre { padding: 1.2rem; }
     footer { font-size: 1rem; }

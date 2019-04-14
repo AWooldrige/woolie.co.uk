@@ -176,6 +176,16 @@ Purchased in September 2014 with:
  * 8 GiB 1600 MHz LPDDR3 SDRAM.
  * 128 GB PCIe-based Flash Storage.
 
+
+### Why not use a thermometer?
+Pure laziness. I own numerous digital oven thermometers and infrared
+thermometers that would have been up to the job. The entire bake was performed
+in a rushed 60 minutes after work one weekday. In hindsight, if I'd have spent
+half as much time as I spent preparing this article on proper temperature
+control, I probably wouldn't be sitting here with a bunch of useless spare
+parts.
+
+
 ### Have you replaced it with another MacBook?
 Not yet - I purchased a cheap tower PC instead. It had been over 10 years since
 I moved to laptops only and I wanted to see what had changed since. Turns out a
@@ -203,3 +213,14 @@ specs, for entertainment:
  * Intel Celeron N3050 1.6 GHz
  * 2 GiB DDR3L SDRAM
  * 32 GB eMMC
+
+
+### What on earth is that oven?
+It's a Klarstein MasterChef 60 Mini Oven (not that 60 L is very mini), which as
+mentioned above is owned solely for extra Christmas dinner capacity. It does
+have a small convection fan, but the heat sources are from four unshielded
+elements: two at the top and two at the bottom. Not the most ideal oven for
+even heat distribution, but certainly a safer choice than using a built in
+kitchen oven as it allowed the acrid fumes to be kept outside. It was also a
+safer choice for myself, as a I fear there would have been some disapproval if
+I'd have managed to fuse a circuit board to the inside of our kitchen oven.
