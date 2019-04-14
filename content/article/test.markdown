@@ -38,6 +38,9 @@ to create [referenced][1] links to not interrupt the flow of the markdown.
 
 [1]: <https://www.example.com/> "Example reference"
 
+Sometimes, it's also nice to include and inline <abbr title="Three Letter
+Acronym">TLA</abbr>, with a definition of the abbreviation.
+
 ## H2 level heading - code markup items
 I add this to my `.bash_profile`:
 

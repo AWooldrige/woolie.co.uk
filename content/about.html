@@ -13,8 +13,10 @@ sitemap: true
 </p>
 
 <h3>Contact</h3>
-<p>Feel free to email me directly using 'woolie' @ the same domain as this site.</p>
-<p>I also lurk in other places, but am often quite poor at keeping them updated:
+<p>
+Feel free to email me directly using 'woolie' at this domain (is email address
+scraping still a thing?). I also lurk in other places, but am shockingly poor
+at keeping them updated:
     <ul>
         <li><a href="https://uk.linkedin.com/in/awooldrige">awooldrige on LinkedIn</a></li>
         <li><a href="https://twitter.com/AWooldrige">@AWooldrige on Twitter</a></li>
@@ -23,13 +25,23 @@ sitemap: true
 
 <h2>About the site</h2>
 <p>
-The most recent design of the site spun out of my desire to create a website without using Bootstrap for the first time in 6 years - forcing me to learn this flexbox thing that had appeared in the meantime.
+    I had some specific reasons for creating this most recent version of woolie.co.uk:
+
+    <ul>
+        <li><strong>Learning CSS flexbox</strong>. I hadn't made a website without using the <a href="https://getbootstrap.com/">Bootstrap</a> framework since 2013. Back then, the grid system that Bootstrap provided was exceptionally handy - floats and tables were the only tools available. In the meantime, flexbox had turned up in CSS and I knew nothing about it!</li>
+        <li><strong>Using SVGs</strong>. Back in 2008, decent SVG support across browsers was shonky. Being able to include and resize SVGs properly is a big advantage.</li>
+        <li><strong>Self hosting web fonts</strong>. As much as I like the convenience of Google Web Fonts, the extra external dependency always bugged me. With WOFF/WOFF2 now widely supported, the cross-browser compatibility that Google Web Fonts provided (based on User-Agent) isn't as required. Although I haven't measured whether it actually makes a difference, including a preload link in the head might reduce the <abbr title="Flash of Invisible Text">FOIT</abbr>.</li>
+    </ul>
 </p>
+
 <p>
-I plan to write an article about the configuration and optimisation of the site, but for now here are the key parts:
+If you're as sad as me, you like knowing the components used to generate and
+host sites. For this site, both the source code and CloudFormation templates
+are available to <a href="https://github.com/AWooldrige/woolie.co.uk">view on
+GitHub</a>. In summary:
 <ul>
-    <li>Generated using <a href="https://nanoc.ws/">Nanoc</a>. Even though I have to use extensive Stack Overflow Driven Development to wrangle the Ruby, it's worth it for this well designed static site generator.</p>
-    <li>Hosted on Amazon S3, fronted by CloudFront with an ACM certificate.</li>
-    <li>Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, S3 static website uploader. A side project of mine.</li>
+    <li><strong>Generated using <a href="https://nanoc.ws/">Nanoc</a></strong>. Even though Nanoc requires wrangling Ruby, it's worth the pain of Stack Overflow Driven Development. Nanoc is a superb unopinionated static site generator.</li>
+    <li><strong>Hosted on Amazon Web Services</strong>. No complicated setup, just S3, fronted by CloudFront with an ACM certificate. It's also cheap as chips.</li>
+    <li><strong>Uploaded using <a href="https://github.com/AWooldrige/s3sup">s3sup</a></strong>. This open source S3 static website uploader is a side project of mine. You should take a look at the features if you host a static site on S3.</li>
 </ul>
 </p>

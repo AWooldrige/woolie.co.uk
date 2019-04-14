@@ -37,6 +37,7 @@ html {
 }
 body {
     font-family: 'Alegraya Sans', sans-serif;
+    text-rendering: optimizeLegibility;
     font-size: 1.1rem;
     color: <%= clr_black %>;
     background-color: <%= clr_light_grey %>;
@@ -51,18 +52,18 @@ body {
     flex: 1 0 auto;
 }
 .site-content a {
-  color: <%= clr_blue %>;
+    color: <%= clr_blue %>;
+    text-decoration: underline;
 }
 .site-content a:hover {
-  color: <%= clr_blue %>;
-  text-decoration: underline;
+    color: <%= clr_logo_gold %>;
+    background-color: <%= clr_light_grey %>;
 }
 .site-content a:active {
-  color: <%= clr_blue %>;
-  text-decoration: underline;
+    color: <%= clr_blue %>;
 }
 .site-content a:visited {
-  color: <%= clr_blue %>;
+    color: <%= clr_black %>;
 }
 
 <%
@@ -107,7 +108,7 @@ nav {
     display: flex;
     align-items: center;
     font-family: Courier New, monospace;
-    margin: 10px 0px 10px 10px; /* T L B R */
+    margin: 10px 10px 10px 0px;
 }
 .navbar-logo img {
     margin-right: 10px;
@@ -133,7 +134,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 10px 10px 10px 0px; /* T L B R */
+    margin: 10px 0px 10px 10px;
     font-size: 1rem;
 }
 .navbar .nav-links a {
@@ -149,7 +150,7 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 footer p {
-    margin: 10px 0px 10px 0px; /* T L B R */
+    margin: 10px 0px 10px 0px;
 }
 
 <%
@@ -212,21 +213,23 @@ pre {
 /* TODO: Need to get these to work well when the caption has a larger width
  * than the image itself */
 .captioned-image {
-    display: inline-block;
+    display: table;
+}
+.captioned-image img {
+    max-width: 100%;
     border: 10px solid #FFF;
     background-color: #FFF;
     -moz-box-shadow: 0 0 4px #AAA;
     -webkit-box-shadow: 0 0 4px #AAA;
     box-shadow: 0 0 4px #AAA;
 }
-.captioned-image img {
-    display: block;
-}
 .captioned-image figcaption {
+    display: table-caption;
+    caption-side: bottom;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 

@@ -4,11 +4,11 @@ created_at: 2019-04-11 20:46:00 +0000
 kind: article
 ---
 
-Putting your Macbook Air in the oven might not be your first port of call after
-your trusty laptop fails to power on; I however, was feeling lucky that day.
-TL;DR: Cranking the temperature up higher than the recipe suggests is a bad
-idea, unless your goal _is_ to simultaneously desolder most components from the
-motherboard. Here is a timeline of events:
+Putting a £1,000 Macbook Air in the oven might not be the first port of call
+after your trusty laptop fails to power on; I however, was feeling lucky that
+day. TL;DR: Cranking the temperature up higher than the recipe suggests is a
+bad idea, unless your goal _is_ to simultaneously desolder most components from
+the motherboard. Here's a timeline of events:
 
 ## Day 1: The MacBook's sudden coma
 This is the MacBook Air, bought in 2014 and specced up with maximum RAM and the
@@ -28,10 +28,11 @@ imageThumbnail(
 It was time to pack up the MacBook after a loyal day of service. When returning
 the laptop to its soft case, I misjudged the approach and my trusty machine
 dropped 30cm or so to the floor, landing on its corner. I thought nothing of
-this; it wasn't first time the MacBook had been dropped and it usually coped
-perfectly fine. Opening the lid to check I hadn't broken the screen, the (tiny)
-CPU fan screeched up to full speed, accompanied by a flash of the keyboard and
-screen backlights. Then all went black, the MacBook was limp and unresponsive.
+this originally; it wasn't first time the MacBook had been dropped and it
+usually coped perfectly fine. However, when opening the lid to check I hadn't
+broken the screen, the tiny CPU fan screamed up to full speed, accompanied by a
+flash of the keyboard and screen backlight. Then all went black, the MacBook
+was limp and unresponsive.
 
 ## Day 2: Administering first aid
 Not a problem I thought, dropping it on the corner like that might have shaken
@@ -139,12 +140,11 @@ imageThumbnail(
 %>
 </div>
 
-With the acrid air clearing and the oven gently ticking as it cooled, my mind
-started re-assessing the decision to place a £1,000 MacBook in the oven.
-Hoping to salvage some functionality, I heated a soldering iron and spent
-30 minutes with a tweezer, unsuccessfully trying to solder the miniature
-components back onto the logic board. On the third 'ouch', I called time; there
-was no hope left.
+With the acrid air clearing and the oven gently ticking as it cooled, I began
+re-assessing the decision to place a £1,000 MacBook in the oven.  Hoping to
+salvage some functionality, I heated a soldering iron and spent 30 minutes with
+a tweezer, unsuccessfully trying to solder the miniature components back onto
+the logic board. After the third 'ouch', I called time; there was no hope left.
 
 <div class='gallery'>
 <%=
@@ -179,7 +179,7 @@ Purchased in September 2014 with:
 ### Have you replaced it with another MacBook?
 Not yet - I purchased a cheap tower PC instead. It had been over 10 years since
 I moved to laptops only and I wanted to see what had changed since. Turns out a
-lot has changed and this new machine has turned out to be one of my favourites!
+lot has changed and this new machine has quickly become one of my favourites!
 Specs:
 
  * AMD Ryzen 3 2200G CPU (/APU) with Radeon Vega 8 Graphics - considering the
@@ -188,18 +188,17 @@ Specs:
    upgrade to 16 GiB.
  * 120 GB SSD - used for boot and root filesystem, encrypted with LUKS.
  * 1 TB spinning rust HDD - used for bulk files, encrypted with LUKS.
+ * Standard Ubuntu (not very exciting I know). In the beginning, kernel support
+   for this line of APU was poor, there was a seemingly 50/50 chance that it
+   would boot successfully and it would often lockup randomly. However, since
+   4.18.0 everything seem to work well!
 
-In the beginning, kernel support for this line of APU was very poor, there was
-a seemingly 50/50 chance it wouldn't boot and would often experience random
-lockups. Since 4.18.0 everything seem to work well.
-
-For travel, I am limping along with a bright purple repurposed HP Stream
+While on the road (well, train) I now sport a bright purple HP Stream
 11-r001na, which my colleagues have branded the "Fisher-Price" laptop. Trying
-to get Ubuntu 18.10/GNOME 3.30 working within it's 2 GiB RAM (leaving room for
-anything else) has been quite a challenge, but I'm determined to hold out for a
-few more weeks before giving up and switching to LXDE/LXQT. This machine was
-originally destined for recycling, until the MacBook packed in. Specs, for
-entertainment:
+to get Ubuntu 18.10/GNOME 3.30 working within it's 2 GiB RAM (whilst leaving
+room for anything else) was too much of a challenge, so I've switched to
+Lubuntu and LXDE/LXQT, which has made this mini-machine just about usable. The
+specs, for entertainment:
 
  * Intel Celeron N3050 1.6 GHz
  * 2 GiB DDR3L SDRAM
