@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
-        <!-- s3sup sets content type already, but no harm -->
-        <meta charset="utf-8">
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <%# Global site tag (gtag.js) - Google Analytics %>
         <!-- IP anonymisation added with: https://developers.google.com/analytics/devguides/collection/gtagjs/ip-anonymization -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24950612-1"></script>
         <script>
@@ -14,15 +11,19 @@
             gtag('config', 'UA-24950612-1', { 'anonymize_ip': true });
         </script>
 
+        <%# s3sup sets content type already, but no harm %>
+        <meta charset="utf-8">
+
         <title><%= @item[:title] %> - Woolie.co.uk</title>
 
-        <!-- Get fonts downloaded as quickly as possible -->
+        <%# Get fonts downloaded as quickly as possible %>
         <link rel="preload" href="<%= @items['/lib/fonts/alegreya-sans/2019-03-27/Alegreya.woff2'].path %>" as="font" type="font/woff2">
         <link rel="stylesheet" type="text/css" href="<%= @items['/assets/style.css'].path %>" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Alistair Wooldrige">
         <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>. Uploaded with s3sup.">
+        <% if @item[:description] %><meta name="description" content="<%= @item[:description] %>"><% end %>
 
         <!-- I generated these with this handy site: https://realfavicongenerator.net -->
         <link rel="apple-touch-icon" sizes="180x180" href="<%= @items['/assets/favicons/apple-touch-icon.png'].path %>">
@@ -34,9 +35,28 @@
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="msapplication-config" content="<%= @items['/assets/favicons/browserconfig.xml'].path %>">
         <meta name="theme-color" content="#ffffff">
+
+<% if @item[:kind] == 'article' %>
+        <%# Yes this is supposed to have 'summary' as the content! %>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@AWooldrige" />
+
+        <%# Open Graph tags are used by FB and Twitter %>
+        <meta property="og:site_name" content="Woolie.co.uk" />
+        <meta property="og:title" content="<%= @item[:title] %>" />
+        <meta property="og:url" content="<%= @config[:base_url] %><%= @item.path %>" />
+        <meta property="og:type" content="article" />
+        <% if @item[:description] %><meta property="og:description" content="<%= @item[:description] %>" /><% end %>
+    <% if @item[:feature_image] %>
+        <meta property="og:image" content="<%= @config[:base_url] %><%= @items[@item[:feature_image]].path %>" />
+    <% else %>
+        <meta property="og:image" content="<%= @config[:base_url] %><%= @items['/assets/logo.optimised.svg'].path %>" />
+    <% end %>
+        <meta property="article:published_time" content="<%= attribute_to_time(@item[:created_at]).iso8601 %>" />
+<% end %>
     </head>
     <body>
-        <nav>
+        <header>
             <div class="site-narrowing-container header-footer navbar">
                 <a class="navbar-logo" href="<%= @items['/index.html'].path %>">
                     <img
@@ -47,18 +67,20 @@
                         <span class="logo-lg">woolie</span><span class="logo-sm">.co.uk</span>
                     </div>
                 </a>
-                <div class="nav-links">
+                <nav>
                     <% nav_items = ['/index.html', '/about.html'] %>
                     <% nav_items.each do |i| %>
                         <%= link_to(@items[i][:title], @items[i], class: @item.path == @items[i].path ? 'nav-link active' : 'nav-link') %>
                     <% end %>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </header>
 
-        <div class="site-narrowing-container site-content">
-            <%= yield %>
-        </div>
+        <main>
+            <div class="site-narrowing-container">
+                <%= yield %>
+            </div>
+        </main>
 
         <footer>
             <div class="header-footer site-narrowing-container">

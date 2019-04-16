@@ -3,10 +3,17 @@ region_name = 'eu-west-1'
 s3_bucket_name = 'www.woolie.co.uk'
 
 
+# Default
 [[path_specific]]
 path = '^.*$'
 Cache-Control = 'max-age=600'
 
+# Cache web pages for a bit shorter
+[[path_specific]]
+path = '^.*\.html$'
+Cache-Control = 'max-age=120'
+
+# Things under /assets or /lib
 [[path_specific]]
 path = '^(assets|lib)/.*$'
 Cache-Control = 'max-age=31104000'

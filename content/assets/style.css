@@ -47,24 +47,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-.site-content {
-    /* Main site content should grow to fill, not the header or footer */
-    flex: 1 0 auto;
-}
-.site-content a {
-    color: <%= clr_blue %>;
-    text-decoration: underline;
-}
-.site-content a:hover {
-    color: <%= clr_logo_gold %>;
-    background-color: <%= clr_light_grey %>;
-}
-.site-content a:active {
-    color: <%= clr_blue %>;
-}
-.site-content a:visited {
-    color: <%= clr_black %>;
-}
 
 <%
 ###############################################################################
@@ -85,14 +67,14 @@ body {
 # NAVIGATION BAR AND FOOTER
 ###############################################################################
 %>
-nav, footer {
+header, footer {
     background-color: <%= clr_blue %>;
     color: <%= clr_light_grey %>;
 
     /* Main site content should grow to fill, not the header or  footer */
     flex: 0 1 auto;
 }
-nav {
+header {
     border-bottom: 4px solid <%= clr_logo_gold %>;
 }
 
@@ -130,14 +112,14 @@ nav {
     color: <%= clr_blue %>;
     text-decoration: underline;
 }
-.navbar .nav-links {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 10px 0px 10px 10px;
     font-size: 1rem;
 }
-.navbar .nav-links a {
+nav a {
     display: inline-block;
     background-color: <%= clr_nav_blue %>;
     margin-right: 5px;
@@ -161,7 +143,26 @@ footer a {
 # MAIN PAGE CONTENT
 ###############################################################################
 %>
-.site-content .lead-spacer {
+main {
+    /* Main site content should grow to fill, not the header or footer */
+    flex: 1 0 auto;
+}
+main a {
+    color: <%= clr_blue %>;
+    text-decoration: underline;
+}
+main a:hover {
+    color: <%= clr_logo_gold %>;
+    background-color: <%= clr_light_grey %>;
+}
+main a:active {
+    color: <%= clr_blue %>;
+}
+main a:visited {
+    color: <%= clr_black %>;
+}
+
+main .lead-spacer {
     margin-top: 1.8rem;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -173,7 +174,7 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.7rem; }
 h3 { font-size: 1.5rem; }
 
-.site-content p {
+main p {
     line-height: 2rem;
 }
 hr {
@@ -213,8 +214,6 @@ pre {
     margin-bottom: 10px;
 }
 
-/* TODO: Need to get these to work well when the caption has a larger width
- * than the image itself */
 .captioned-image {
     display: table;
 }
@@ -245,13 +244,13 @@ pre {
 @media (min-width: 992px) {
     body { font-size: 1.3rem; }
     .navbar { padding-top: 20px; padding-bottom: 15px; }
-    .navbar .nav-links { font-size: 1.2rem; }
+    nav { font-size: 1.2rem; }
     .logo-lg { font-size: 2rem; }
     .logo-sm { font-size: 0.8rem; }
-    .site-content h1 { font-size: 2.4rem; margin-top: 2.3rem; }
-    .site-content h2 { font-size: 2rem; margin-top: 2.3rem; }
-    .site-content h3 { font-size: 1.8rem; margin-top: 2.3rem; }
-    .site-content p { line-height: 2.2rem; }
+    main h1 { font-size: 2.4rem; margin-top: 2.3rem; }
+    main h2 { font-size: 2rem; margin-top: 2.3rem; }
+    main h3 { font-size: 1.8rem; margin-top: 2.3rem; }
+    main p { line-height: 2.2rem; }
     pre { padding: 1.2rem; }
     footer { font-size: 1rem; }
 }
