@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Alistair Wooldrige">
         <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>. Uploaded with s3sup.">
-        <% if @item[:description] %><meta name="description" content="<%= @item[:description] %>"><% end %>
+        <% if @item[:excerpt] %><meta name="description" content="<%= @item[:excerpt] %>"><% end %>
 
         <!-- I generated these with this handy site: https://realfavicongenerator.net -->
         <link rel="apple-touch-icon" sizes="180x180" href="<%= @items['/assets/favicons/apple-touch-icon.png'].path %>">
@@ -46,7 +46,7 @@
         <meta property="og:title" content="<%= @item[:title] %>" />
         <meta property="og:url" content="<%= @config[:base_url] %><%= @item.path %>" />
         <meta property="og:type" content="article" />
-        <% if @item[:description] %><meta property="og:description" content="<%= @item[:description] %>" /><% end %>
+        <% if @item[:excerpt] %><meta property="og:description" content="<%= @item[:excerpt] %>" /><% end %>
     <% if @item[:feature_image] %>
         <meta property="og:image" content="<%= @config[:base_url] %><%= @items[@item[:feature_image]].path %>" />
     <% else %>
@@ -91,7 +91,10 @@
                         alt="Woolie.co.uk logo" />
                     &copy; 2005-<%= Date.today.strftime("%Y") %> Alistair Wooldrige.
                 </p>
-                <p>Uploaded with <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, open source S3 static website uploader.</p>
+                <ul>
+                    <li>Uploaded with <a href="https://github.com/AWooldrige/s3sup">s3sup</a>, open source S3 static website uploader.</li>
+                    <li><a href="<%= @items['/feed.xml'].path %>">Atom feed</a> available for latest articles.</li>
+                </ul>
             </div>
         </footer>
     </body>

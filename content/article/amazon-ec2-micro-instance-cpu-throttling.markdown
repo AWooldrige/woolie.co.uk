@@ -2,6 +2,10 @@
 title: Amazon EC2 Micro Instance CPU Throttling
 created_at: 2013-06-07 07:22:00 +0000
 kind: article
+excerpt: >-
+    Amazon Web Services micro EC2 instances incur CPU throttling if too much of
+    the resource is used. This article investigates how that throttling is
+    shaped and applied.
 ---
 
 <p class="lead" markdown="1">

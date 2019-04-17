@@ -3,7 +3,7 @@
 ##############################################################################
 # SITEMAP, ROBOTS & S3SITEDEPLOY
 ##############################################################################
-['/sitemap.xml', '/robots.txt'].each do |r|
+['/sitemap.xml', '/feed.xml', '/robots.txt'].each do |r|
     compile r do
         filter :erb
         write item.identifier.to_s

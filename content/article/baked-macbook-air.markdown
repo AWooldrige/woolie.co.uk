@@ -1,9 +1,10 @@
 ---
 title: "Baked MacBook Air: A cautionary recipe"
 created_at: 2019-04-11 20:46:00 +0000
+updated_at: 2019-04-13 12:46:00 +0000
 kind: article
 feature_image: /article/baked-macbook-air/logic-and-io-board-inside-oven.jpg
-description: >-
+excerpt: >-
     Putting a £1,000 Macbook Air in the oven and cranking the temperature up
     higher than the recipe suggests is a bad idea, unless your goal is to
     simultaneously desolder most components from the motherboard.

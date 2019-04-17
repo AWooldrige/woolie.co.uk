@@ -82,7 +82,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+header .header-footer {
     align-items: center;
+}
+footer .header-footer {
+    align-items: flex-start;
 }
 
 .navbar-logo {
@@ -131,11 +136,14 @@ footer {
     border-top: 4px solid <%= clr_logo_gold %>;
     padding: 10px 0px 10px 0px;
 }
-footer p {
+footer p, footer ul {
     margin: 10px 0px 10px 0px;
 }
 footer a {
     text-decoration: underline;
+}
+footer ul {
+    list-style-type: circle;
 }
 
 <%
