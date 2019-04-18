@@ -1,13 +1,17 @@
 ---
-title: Dell Laptop Stuck at 800MHz - Linux Fix
+title: Dell Laptop Stuck at 800 MHz - Linux Fix
 created_at: 2011-02-20 11:44:54 +0000
+updated_at: 2011-02-20 11:44:54 +0000
 kind: article
 Legacy WP ID: 558
+excerpt: >-
+    Force the Linux kernel to ignore the Dell BIOS, which will stop your
+    machine from being forced to run with the slowest CPU governor.
 ---
 
 I've got a Dell Inspiron 1720 laptop is which is only 2 years old. It started
 running extraordinarily slowly, and the CPU governer wouldn't scale above
-800MHz. At first I thought this was down to the operating system. In Ubuntu
+800 MHz. At first I thought this was down to the operating system. In Ubuntu
 10.10, a quick `cpufreq-info` revealed the some strange limits:
 
     current policy: frequency should be within 800 MHz and 800 MHz. The
@@ -16,13 +20,13 @@ running extraordinarily slowly, and the CPU governer wouldn't scale above
 On the next reboot the dreaded message came up:
 
     The AC power adapter type cannot be determined. Your system will operate
-    slower and the battery will not charge. Please connect a Dell 90W AC
+    slower and the battery will not charge. Please connect a Dell 90 W AC
     adapter or higher for best system operation.
 
 Dell place a chip in their adapters which force you to use theirs and no one
 else. They say this is to "protect the battery" and identify the wattage of the
 adapter. There's nothing wrong with my adapter, yet I now cannot charge the
-battery, and my system is stuck at 800MHz. Communication with this chip is
+battery, and my system is stuck at 800 MHz. Communication with this chip is
 through a one wire protocol, that's what that mysterious centre pin inside the
 AC jack is for. The 5 secondish wait on the BIOS page when the adapter is
 plugged in suggests there's no life in the chip. To make sure, I tested the

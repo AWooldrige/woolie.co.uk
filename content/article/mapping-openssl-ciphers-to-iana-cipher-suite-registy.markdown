@@ -1,7 +1,11 @@
 ---
 title: Mapping OpenSSL Cipher Suite Names to Official Names and RFCs
 created_at: 2014-11-06 16:48:00 +0000
+updated_at: 2014-11-06 16:48:00 +0000
 kind: article
+excerpt: >-
+    It can be tough to work out which RFC cipher name matches which OpenSSL
+    cipher suite name. This shows how to do it.
 ---
 OpenSSL, and a lot of software that uses it
 ([httpd](http://httpd.apache.org/docs/current/mod/mod_ssl.html#sslciphersuite),

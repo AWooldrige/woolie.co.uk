@@ -1,6 +1,7 @@
 ---
 title: Boto get_instance_metadata Hangs When Not on EC2
 created_at: 2014-01-06 17:30:00 +0000
+updated_at: 2014-01-06 17:30:00 +0000
 kind: article
 excerpt: >-
     Boto's get_instance_metadata can hang when run on a non-EC2 machine. Find

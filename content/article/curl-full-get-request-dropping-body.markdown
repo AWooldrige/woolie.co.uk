@@ -1,7 +1,12 @@
 ---
 title: Make Full GET Request But Only Display Headers - cURL
 created_at: 2014-10-30 17:20:00 +0000
+updated_at: 2014-10-30 17:20:00 +0000
 kind: article
+except: >-
+    Sometimes, you'd like to cURL to make a GET request but only show the
+    response headers. This article shows how to do that, without issuing an
+    HTTP HEAD.
 ---
 
 #### TL;DR - Here's the command

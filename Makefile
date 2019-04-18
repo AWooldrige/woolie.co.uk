@@ -13,7 +13,7 @@ test: local_tests
 
 .PHONY: local_tests
 local_tests: output
-	bundle exec nanoc check internal_links stale mixed_content no_geotags no_todos
+	bundle exec nanoc check internal_links stale mixed_content no_geotags no_todos space_before_unit
 
 
 .PHONY: clean

@@ -1,7 +1,11 @@
 ---
 title: Vagrant Shared Directory Hangs on Ubuntu 13.10
 created_at: 2013-12-17 22:20:00 +0000
+updated_at: 2013-12-17 22:20:00 +0000
 kind: article
+excerpt: >-
+    How to get yourself up and running again after running any command in a
+    Vagrant shared directory hangs.
 ---
 
 ### The Symptom

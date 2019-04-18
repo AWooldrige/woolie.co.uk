@@ -1,8 +1,12 @@
 ---
 title: Install biblatex for use with Kile on Ubuntu
 created_at: 2010-09-21 13:39:27 +0000
+updated_at: 2010-09-21 13:39:27 +0000
 kind: article
 Legacy WP ID: 446
+excerpt: >-
+    Installing biblatex for using with the Kile editor is easier than you
+    think.
 ---
 A good hour of my time has been wasted today trying to manuallly install
 biblatex. When trying to compile a document with Kile it choked up `File

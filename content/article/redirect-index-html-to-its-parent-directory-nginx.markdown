@@ -1,7 +1,11 @@
 ---
 title: Redirect index.html to its Parent Directory in Nginx
 created_at: 2013-05-16 17:34:54 +0000
+updated_at: 2013-05-16 17:34:54 +0000
 kind: article
+excerpt: >-
+    An initial configuration step with many static websites is to ensure that
+    the index.html is served whenever a directory path is requested.
 ---
 I use nanoc to generate static sites which get served with nginx. The files and
 directories produced have the following basic structure.

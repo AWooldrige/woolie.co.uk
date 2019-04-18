@@ -1,8 +1,12 @@
 ---
 title: "Markup test: article"
 created_at: 2019-04-10 06:56:00 +0000
+updated_at: 2019-04-10 06:56:00 +0000
 kind: article
 sitemap: false
+excerpt: >-
+    Most sites use a test page for checking markup. This is what you see here.
+    Good hey!
 ---
 
 <p class="lead" markdown="1">
@@ -74,7 +78,7 @@ That breaks up our flow.
 
 
 ### H4 level heading - image time
-Time to get some images involved. First off, a 1980px width image included
+Time to get some images involved. First off, a 1980 px width image included
 verbatim, without any nanoc filters.
 
 <%=

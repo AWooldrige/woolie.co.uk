@@ -33,7 +33,7 @@ imageThumbnail(
 
 It was time to pack up the MacBook after a loyal day of service. When returning
 the laptop to its soft case, I misjudged the approach and my trusty machine
-dropped 30cm or so to the floor, landing on its corner. I thought nothing of
+dropped 30 cm or so to the floor, landing on its corner. I thought nothing of
 this originally; it wasn't first time the MacBook had been dropped and it
 usually coped perfectly fine. However, when opening the lid to check I hadn't
 broken the screen, the tiny CPU fan screamed up to full speed, accompanied by a

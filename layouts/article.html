@@ -1,4 +1,12 @@
 <% render '/default.html' do %>
+<article>
     <h1><%= item[:title] %></h1>
     <%= yield %>
+
+    <div class="article-meta">
+        Article published on: <time datetime="<%= attribute_to_time(@item[:created_at]).iso8601 %>"><%= attribute_to_time(@item[:created_at]).strftime('%d %B %Y') %></time>.
+        Last updated: <time datetime="<%= attribute_to_time(@item[:updated_at]).iso8601 %>"><%= attribute_to_time(@item[:updated_at]).strftime('%d %B %Y') %></time>.
+    </div>
+</article>
+
 <% end %>

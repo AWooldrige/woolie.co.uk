@@ -1,7 +1,11 @@
 ---
 title: Line Breaks in Apache httpd Configuration Directives
 created_at: 2014-10-23 17:40:00 +0000
+updated_at: 2014-10-23 17:40:00 +0000
 kind: article
+excerpt: >-
+    Avoid long lines of Apache httpd configuration by using the lesser known
+    line break feature.
 ---
 
 It's possible to split Apache httpd configuration directives over multiple

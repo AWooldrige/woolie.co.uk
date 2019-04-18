@@ -5,6 +5,7 @@
     clr_white = '#F5F5F5'
     clr_light_grey = '#F0ECEB'
     clr_darker_grey = '#CECECE'
+    clr_dark_grey = '#777'
     clr_black = '#283018'
 
     clr_green = '#729F98'
@@ -135,6 +136,7 @@ footer {
     margin-top: 20px;
     border-top: 4px solid <%= clr_logo_gold %>;
     padding: 10px 0px 10px 0px;
+    font-size: 1rem;
 }
 footer p, footer ul {
     margin: 10px 0px 10px 0px;
@@ -242,6 +244,12 @@ pre {
     font-size: 1rem;
 }
 
+.article-meta {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: <%= clr_dark_grey %>;
+    font-size: 1rem;
+}
 
 <%
 ###############################################################################
@@ -260,5 +268,4 @@ pre {
     main h3 { font-size: 1.8rem; margin-top: 2.3rem; }
     main p { line-height: 2.2rem; }
     pre { padding: 1.2rem; }
-    footer { font-size: 1rem; }
 }
