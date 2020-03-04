@@ -33,11 +33,14 @@ module ImageHelper
         return html
     end
 
-    def imageVerbatim(itemIdentifier, size=:default)
+    def imageVerbatim(itemIdentifier, caption=false)
         item = @items[itemIdentifier]
-        img = '<img src="' + item.path(:rep => size) + '" ' \
+        html = '<img src="' + item.path + '" ' \
                    'alt="' + item[:title] + '" />'
-        return img
+        if caption
+            html = '<figure class="captioned-image">' + html + '<figcaption>' + item[:caption] + '</figcaption></figure>'
+        end
+        return html
     end
 
 end
