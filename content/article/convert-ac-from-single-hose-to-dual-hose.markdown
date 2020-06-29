@@ -144,8 +144,8 @@ the summer.
 
 On the Challenge unit, the condenser air intake is the lower grille underneath
 the exhaust hose port. After ducting this grille into the tumble drier hose,
-this is the result. Not ethically pleasing but very effective for the 3 days of
-summer that the UK gets every year:
+this is the result. Not aesthetically pleasing, but very effective for the
+three days of summer that the UK gets every year:
 
 <div class='gallery'>
 <%=
