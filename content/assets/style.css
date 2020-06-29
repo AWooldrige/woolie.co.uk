@@ -226,7 +226,9 @@ pre {
 
 .captioned-image {
     display: table;
+    text-align: center;
 }
+
 .captioned-image img {
     max-width: 100%;
     border: 10px solid #FFF;
@@ -242,6 +244,14 @@ pre {
     margin-bottom: 5px;
     text-align: center;
     font-size: 1rem;
+}
+.captioned-image .half-width-image {
+    width: 450px;
+    height: auto;
+}
+.half-width-image {
+    width: 450px;
+    height: auto;
 }
 
 .article-meta {
