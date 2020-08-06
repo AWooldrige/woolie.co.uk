@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2020-06-29 22:00:00 +0000
+updated_at: 2020-08-06 22:50:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -101,8 +101,10 @@ manufacturing costs. By fashioning an adapter to duct the condenser intake port
 so that it draws from the outside air, it will perform with the same efficiency
 as a dual hose unit.
 
-There are two requirements that a single hose air conditioning unit must meet
-to make conversion possible:
+### Will this work with my AC?
+Every AC unit is different, so there are no guaruntees this modification will
+work with every model. As a guide, there are three requirements that an AC unit
+must meet to make conversion possible:
 
  1. **There must be two separate air intake ports for the evaporator and
     condenser sides**.
@@ -115,14 +117,55 @@ to make conversion possible:
     2. Open the unit up and investigate yourself. Do not do this unless you are
        confident about electrical and refridgerant safety and are prepared to
        invalidate the warranty of your machine.
+ 3. **The air temperature probe must not be in the condensor side air intake**
+    1. If the unit allows a cooling temperature to be set, it probably has a
+       thermostat. This thermostat will have a temperature measuring probe
+       somewhere. If the probe is located in the condenser side air intake,
+       once the intake is ducted it will no longer measure the room
+       temperature, it'll measure the outside air temperature. This is
+       potentially dangerous as the unit will never detect that the room is
+       cooling, so will never cycle down the compressor and there is a higher
+       risk of overheating.
+    2. If the temperature probe is on the evaporator side air intake, this is
+       fine as that intake will not be ducted.
 
-To convert the unit from single host to dual hose:
+### Instructions for conversion
 
- 1. Source an additional air conditioning hose or equivalent.
+If all requirements are met, you should then be aware of the risks:
+
+ * I'm not an expert on air conditioners, safety or anything related. You must
+   be aware that you are following instructions from some random person on the
+   internet that spent 5 minutes with cardboard, duck tape, trial, error and
+   some luck.
+ * This modification increases the risk of the unit overheating, because it is
+   easier for the ducted intake hose to become blocked or the flow rate
+   impaired, compared to a wide open grille that was present before. See the
+   note about an additional fire alarm in the instructions.
+ * It will almost certainly invalidate any manufacturer warranty.
+ * Materials used in the conversion must be able to withstand the same high
+   temperatures as the exhaust hose, just in case they accidentally come in
+   contact.
+
+Once you're aware of the risks, the steps to convert the unit from single hose
+to dual hose are simple:
+
+ 1. Buy an additional battery powered fire alarm to have in the room with the
+    AC.
+    1. It is likely that the room with AC will have the doors closed, as most
+    people do this to keep the room cool. If you accidentally or intentionally
+    fall asleep and the machine malfunctions, it'll take seconds for the smoke
+    to be distributed around the room. With the doors closed, it's likely that
+    you'll have already taken in too much smoke to wake up before it's able to
+    reach your normal fire alarms outside the room.
+ 1. Source an additional air conditioning hose or equivalent. This should be a
+    similar diameter to the exhaust hose, so that flow rate is not restricted.
  2. Identify which air grille on the unit is the condenser (hot coil) air
     intake.
  3. Create an adapter to duct this air grille into the additional air
-    conditioning hose, so that it can be made to draw air from the outside.
+    conditioning hose, so that draws air from the outside instead of inside.
+    Make sure all materials are able to safely withstand the temperature of the
+    exhaust hose, just in case the hoses accidentally come into contact.
+
 
 ## My conversion example
 I purchased a "Challenge 5K Air Conditioning Unit" in 2019 for £289.99 from
@@ -133,8 +176,10 @@ a couple of hours.
 The conversion was performed in minutes, using items easily purchased at a
 hardware shop or found around the house:
 
- 1. A tumble drier hose.
- 2. Discarded polystyrene packaging foam and cardboard.
+ 1. A tumble drier hose. This wasn't the same diameter as my exhaust hose, but
+    it didn't restrict the air flow.
+ 2. Discarded polystyrene packaging foam and cardboard. This is completely
+    unsuitable for high temperatures, so is only for a prototype,
  3. Spare foam strips that came along with the air conditioner to provide a
     better seal between the polystyrene and the unit.
  3. Plenty of duck tape.
@@ -163,6 +208,7 @@ imageThumbnail(
 )
 %>
 </div>
+
 
 ## Further tips for optimum efficiency
 
