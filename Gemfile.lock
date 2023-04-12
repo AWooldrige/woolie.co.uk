@@ -1,4 +1,7 @@
 GEM
+  specs:
+
+GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
@@ -36,7 +39,7 @@ GEM
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.8.1)
     nanoc (4.12.1)
       addressable (~> 2.5)
       colored (~> 1.2)
@@ -74,14 +77,14 @@ GEM
       listen (~> 3.0)
       nanoc-cli (~> 4.11, >= 4.11.14)
       nanoc-core (~> 4.11, >= 4.11.14)
-    nokogiri (1.11.3)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.14.3)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.20.1)
     pastel (0.8.0)
       tty-color (~> 0.5)
     public_suffix (4.0.6)
-    racc (1.5.2)
+    racc (1.6.2)
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
