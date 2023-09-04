@@ -183,6 +183,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 2rem; }
 h2 { font-size: 1.7rem; }
 h3 { font-size: 1.5rem; }
+h4 { 
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+h5 { font-weight: bold; }
 
 main p {
     line-height: 2rem;
@@ -209,6 +214,23 @@ pre {
     border-left: 4px solid <%= clr_blue %>;
     padding: 0.8rem;
     font-size: 0.8rem;
+}
+
+blockquote {
+    /*background-color: <%= clr_white %>;*/
+    border-left: 5px solid  <%= clr_darker_grey %>;
+    color: <%= clr_dark_grey %>;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.warning {
+    background-color: #F2B7B7;
+    border: 5px solid red;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .gallery {

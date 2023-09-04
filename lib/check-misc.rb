@@ -8,7 +8,8 @@ end
 
 Nanoc::Check.define(:space_before_unit) do
     exceptions = [
-        "2200G"
+        "2200G",
+        "5K"
     ]
     @output_filenames.each do |filename|
         if filename =~ /html$/

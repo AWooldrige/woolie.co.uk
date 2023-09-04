@@ -15,10 +15,12 @@ but will never be able to cool the rest of the room. Single hose ACs are bad
 news for the environment, energy bills and your heatwave comfort!
 
 The problem for UK residents is that single hose ACs are the only type of
-portable model available to buy. Dual hose models, [window
+portable model availabl. Dual hose models, [window
 units](https://en.wikipedia.org/wiki/Air_conditioning#Window_unit_and_packaged_terminal)
-or portable split units are not available, despite their vastly superior
-performance and efficiency. But what makes single hose ACs so bad?
+or portable split units are not available, despite their superior
+performance and efficiency.
+
+But what makes single hose ACs so bad?
 
 
 ## Background: Air conditioners are refrigerators with fans
@@ -42,12 +44,13 @@ follow this operating model:
 </div>
 
 
-Dual hose portable air conditioners follow the same principle, but incorporate
-the outside unit into a single inside unit; instead using ducting hoses to draw
-outside air over the condenser coils and back to the outside again. They are
-more convenient as no permanent installation is required. They a tiny bit less
-efficient due to heat loss through the hoses and the additional heat generated
-from the compressor, which is now inside the room that needs to be cooled.
+Dual hose portable air conditioners are perfectly fine too, as they follow the
+same principles. The only difference is that they incorporate the outside unit
+into a single inside unit; instead using ducting hoses to draw outside air over
+the condenser coils and back to the outside again. They are more convenient as
+no permanent installation is required. They are marginally less efficient due
+to heat loss through the hoses and the additional heat generated from the
+compressor, which is now inside the room that needs to be cooled.
 
 <div class='gallery'>
 <%=
@@ -66,9 +69,8 @@ they are so inefficient. Instead of using two hoses to keep the air masses
 separate and drawing outside air to pass over the condenser coils, they ditch
 the intake hose and just draw the *inside* air instead — destroying the working
 principles of air conditioning. Why? Probably because it's easier to market and
-sell the convenience of one hose rather than two... They chose to leave out the
-fine print that mentions going from two to one house makes a perfectly good
-machine next to useless.
+sell the convenience of one hose rather than two. They forgot to mention in the
+fine print that having only a single hose makes the machine close to useless.
 
 <div class='gallery'>
 <%=
@@ -94,14 +96,60 @@ exhaust hose and the window, then close all doors and feel around the gaps
 between the door and the frame. You'll be able to feel the air rushing in to
 the equalise the negative pressure in the room you're trying to cool.
 
+Don't believe me still? Leave your AC running for an hour, then come back in
+the room. You'll be dissapointed. Walk round the edges of the room, it'll feel
+barely cooler than when you left. Touch the walls, they'll be warm still. In
+any other setting like an office, restaurant or car, you're used to the whole
+room being cool, not just the tiny space directly in front of the air
+conditioner.
+
 
 ## Solution: Convert the single hose AC to dual hose
 Thankfully, many single hose ACs can easily be converted to dual hose systems.
 Single hose systems are often designed with two separate intake ports just like
-dual hose units, despite only needing one; presumably to reduce design and
-manufacturing costs. By fashioning an adapter to duct the condenser intake port
-so that it draws from the outside air, it will perform with the same efficiency
-as a dual hose unit.
+dual hose units, despite only needing one; it's like the engineeers knew that a
+single hose was a bad idea so left in the ability for modification. By
+fashioning an adapter to duct the condenser intake port so that it draws from
+the outside air, it will perform with the same efficiency as a dual hose unit.
+
+<div class='warning'>
+<p><strong>WARNING</strong></p>
+
+<p>
+I'm not an expert on air conditioners, safety or anything related. You must be
+aware that you are following instructions from some random person on the
+internet that spent 20 minutes with cardboard, duck tape, trial, error and some
+luck. Some other warnings:
+</p>
+
+<p>
+<ul>
+   <li>
+   <strong>Overheating risk:</strong> This modification might increase the risk of the unit overheating,
+   especially if modified incorrectly. It is easier for the ducted intake hose
+   to become blocked or the flow rate impaired, compared to a wide open grille
+   that was present before.
+   </li>
+   <li>
+   <strong>Fire safety:</strong> Buy an additional fire alarm to have in the room with the AC. It is likely
+   the room with AC will have the doors closed. If you fall asleep and the
+   machine malfunctions, it'll take seconds for the smoke to fill the room.
+   With the doors closed, it's likely that you'll have already taken in too
+   much smoke to wake up before it's able to reach the normal fire alarms
+   outside the room you're in. Make sure you have on in the same room too.
+   </li>
+   <li>
+   <strong>Warranty:</strong> It will almost certainly invalidate any manufacturer warranty.
+   </li>
+   <li>
+   <strong>High temp materials:</strong> Materials used in the conversion must be able to withstand the same high
+   temperatures as the exhaust hose, just in case they accidentally come in
+   contact.
+   </li>
+</ul>
+</p>
+</div>
+
 
 ### Will this work with my AC? The flow block test...
 Every AC unit is different, so there are no guarantees this modification will
@@ -148,37 +196,28 @@ compressor never switches off as never detects the room is cold enough.
 
 ### Instructions for conversion after flow block test
 
-If all machine requirements are met, you should then be aware of the risks:
+If all machine requirements are met, you should once again read, be aware and
+mitigate the risks mentioned in the red warnings box further up on this page.
 
- * I'm not an expert on air conditioners, safety or anything related. You must
-   be aware that you are following instructions from some random person on the
-   internet that spent 20 minutes with cardboard, duck tape, trial, error and
-   some luck.
- * This modification might increase the risk of the unit overheating,
-   especially if modified incorrectly. It is easier for the ducted intake hose
-   to become blocked or the flow rate impaired, compared to a wide open grille
-   that was present before. See the note about an additional fire alarm in the
-   instructions.
- * It will almost certainly invalidate any manufacturer warranty.
- * Materials used in the conversion must be able to withstand the same high
-   temperatures as the exhaust hose, just in case they accidentally come in
-   contact.
+Once aware of the risks, the steps to convert the unit from single hose to dual
+hose are simple:
 
-Once you're aware of the risks, the steps to convert the unit from single hose
-to dual hose are simple:
-
- 1. Buy an additional fire alarm to have in the room with the AC:
-    1. It is likely the room with AC will have the doors closed. If you fall
-       asleep and the machine malfunctions, it'll take seconds for the smoke to
-       fill the room. With the doors closed, it's likely that you'll have
-       already taken in too much smoke to wake up before it's able to reach the
-       normal fire alarms outside the room you're in. Make sure you have on in
-       the same room too.
+ 1. Buy an additional fire alarm to have in the room with the AC. I'm not
+    joking about this.
  1. Source an additional air conditioning hose or equivalent. This should be a
     similar diameter to the exhaust hose, so that flow rate is not restricted.
+    It's also important it is sturdy and suitable for high temperatures, as
+    this will be used partially outside in the sunlight on hot days.
  3. Create an adapter to duct the condenser (hot) air intake that you
     identified earlier, into the additional air conditioning hose, so that it
     draws air from the outside instead of inside. Make sure it's a good seal.
+ 4. Place the new hose through to the outside along with your exhaust hose
+     * Ensure there is enough distance so that the hot air of the exhaust
+        isn't being drawn straight into your new intake.
+     * Secure the outside part of the intake hose. If left dangling, the
+       suction could draw it onto close objects and block the flow. I found
+       this out through experience, one day my intake hose had stuck itself to
+       the outside wall like a limpit.
 
 
 ### How will I know if the conversion worked?
@@ -195,7 +234,7 @@ Then leave the room for at least an hour. Even if the conversion was
 successful, a perfectly functioning AC will still take a while too cool a whole
 room down due to the latent heat in all of the furniture and walls. After an
 hour, the room should have started cooling down. After many hours, everything
-in the room should be cool to the touch and it feel more like a fridge.
+in the room should be cool to the touch and feel like a fridge.
 
 
 ### Further tips for optimum efficiency
@@ -204,43 +243,60 @@ in the room should be cool to the touch and it feel more like a fridge.
    only around £20, but make a big difference to the cooling performance, plus
    keep those summer bugs and flies outside.
  * Keep the intake and exhaust hoses away from each other when outside of the
-   window. Having them close to each other increases the change that the intake
-   hose is drawing in freshly exhausted hot air. If stacking vertically, I like
-   to keep the intake hose below the exhaust hose for this reason too, as hot
-   air rises slightly.
+   window. Having them close to each other increases the chance that the hot
+   exhaust air is being drawn straight into the intake hose. If stacking
+   vertically, I like to keep the intake hose below the exhaust hose for this
+   reason too, as hot air rises slightly.
  * Keep the length of the hoses short, to minimise losses back into the room.
    Move the unit as close to the window as possible.
 
 
+---
+
 ## Known working AC model conversion examples
 
 ### Challenge 5K (5,000 BTU)
-Argos ID: 887/3600
-
-This is the first air conditioner I ever modified.  I purchased this unit in
-2019 for £289.99 from Argos. Despite only being 5000 BTU, after conversion to
-dual hose it was able to cool a medium sized room from 34 C outside
-temperatures down to 22 C in only a couple of hours.
+This is the first air conditioner I modified. The unit was purchased in 2019
+for £289.99 from Argos. Despite only being 5000 BTU, after conversion to dual
+hose it was able to cool a medium sized room from 34 C outside temperatures
+down to 22 C in only a couple of hours.
 
 The conversion was performed in minutes, using items easily purchased at a
 hardware shop or found around the house:
 
- 1. A tumble drier hose. This wasn't the same diameter as my exhaust hose, but
-    it didn't restrict the air flow.
- 2. An Amazon packaging box that was of similar size to the condenser intake
-    port. This isn't the ideal material though, because it's not fire safe, nor
-    water repellant.
+ 1. An additional air conditioner hose bought from Amazon.
+ 2. An old clear tupperware box that was about the same size as the condenser
+    intake port.
  3. Spare foam strips that came along with the air conditioner to provide a
     better seal between the box and the unit.
  3. Plenty of duck tape.
-
-This isn't an ideal set of materials, but works well enough to tide over for
-the summer.
 
 On the Challenge unit, the condenser air intake is the lower grille underneath
 the exhaust hose port. After ducting this grille into the tumble drier hose,
 this is the result. Not aesthetically pleasing, but very effective for the
 three days of summer that the UK gets every year:
+
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/challenge-dual-hose-conversion-with-tupperware-1.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/challenge-dual-hose-conversion-with-tupperware-2.jpg',
+    :w400
+)
+%>
+</div>
+
+Originally, I acheived this using a polystyrene box, carboard and a tumble
+drier hose. Whilst it worked fine, this wasn't the safest approach so next time
+I used a proper air conditioning hose and a sturdy tupperware box:
 
 <div class='gallery'>
 <%=
@@ -259,6 +315,110 @@ imageThumbnail(
 %>
 </div>
 
+
+### Delonghi Pinguino EX120
+Robbie has successfully converted the Delonghi Pinguino EX120 Silent 11500 BTU
+Portable Air Conditioner. The lower rear grille was ducted to acheive this:
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-delonghi-pinguino-ex120-front.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-delonghi-pinguino-ex120-side.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### Matsui MAT-7KACW
+Matthew has sent in a guide to their successful modification of a Matsui MAT-7KACW:
+
+> #### Dual Hose Adapter
+>
+> I tested the vents to confirm that the bottom vent under the existing hose
+> was the correct one to attach to.
+>
+> I measured the dimensions of the vent and screwed together a frame out of
+> wood that size. I drew around the frame onto some plywood and cut it out with
+> a handsaw.
+>
+> I attached the plywood to the frame with a hammer and some pins and some no
+> more nails. I then drew around the hose adapter for the vent side onto the
+> ply and cut it out by drilling holes and using a jigsaw. I screwed then hose
+> adapter to the wood.
+>
+> I lined up the rear plastic vent with the wooden frame and marked the screw
+> holes. I used longer screws of the some size and thread to attach the wooden
+> frame to the air conditioning unit through the plastic vent and existing
+> mounting holes.
+>
+> I attached the pipes to connect the new wooden frame 2nd hose adapter to the
+> window kit. And the existing hose point to the window kit.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-matsui-mat-7kacw-box-ducting.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-matsui-mat-7kacw-side.jpg',
+    :w400
+)
+%>
+</div>
+
+Including a custom made window kit, which looks very sturdy!
+
+> #### Window Kit
+>
+> I measured the dimensions of my window and cut a piece of plywood with a
+> handsaw such that it would block my window.
+>
+> I then drew around the end of the 2 hose adapters, drilled holes then used a
+> jigsaw to cut them out.
+>
+> I then measured the depth of my window and cut blocks of wood of approx that
+> depth. I drilled a hole through another pieces of wood and then drilled them
+> together to create the locking mechanism to hold it in place.
+>
+> It's fitted with the blocks turned inwards, and our out of the window narrow
+> side first, then rotated and brought up into the window slot, the blocks are
+> then rotated to overlap with the window frame and secure it.
+>
+> The hose adapters and screwed into the plywood and left attached. The hose is
+> removed from this as and when needed.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-matsui-mat-7kacw-window-kit.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-matsui-mat-7kacw-window-kit-installed.jpg',
+    :w400
+)
+%>
+</div>
+
+---
 
 ## Converted your model successfully?
 If you'd like to help others and include a picture of how to convert your
