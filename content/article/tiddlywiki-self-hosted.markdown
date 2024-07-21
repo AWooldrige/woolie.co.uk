@@ -16,7 +16,7 @@ first and I persevered with it for many years. It's feature set is adequate,
 the note search is snappy and the price _just_ about acceptable. But there's
 one reason that I felt an urge to stop using it - at the time, note data was
 stored unencrypted on Evernote's servers. Even now, they use Google supplied
-encryption at rest, but unless I'm the one the has the encryption keys, I won't
+encryption at rest, but unless I'm the one who has the encryption keys, I won't
 be satisfied. Although I'm sure they have a top notch security team, but if
 someone else has my encryption keys, that doesn't give me a warm fuzzy feeling.
 
