@@ -1,7 +1,7 @@
 ---
 title: "Self-hosting notes with a Raspberry Pi and TiddlyWiki"
 created_at: 2020-03-04 07:22:00 +0000
-updated_at: 2020-03-04 07:22:00 +0000
+updated_at: 2024-07-21 21:00:00 +0000
 kind: article
 excerpt: >-
     Self-hosted note taking with a Raspberry Pi, TiddlyWiki and encrypted

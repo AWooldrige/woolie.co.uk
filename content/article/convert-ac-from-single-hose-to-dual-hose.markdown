@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2023-09-04 22:40:00 +0000
+updated_at: 2024-07-24 20:40:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 xcerpt: >-
@@ -116,35 +116,39 @@ the outside air, it will perform with the same efficiency as a dual hose unit.
 <p><strong>WARNING</strong></p>
 
 <p>
-I'm not an expert on air conditioners, safety or anything related. You must be
+I am not an expert on air conditioners, safety or anything related. You must be
 aware that you are following instructions from some random person on the
 internet that spent 20 minutes with cardboard, duck tape, trial, error and some
-luck. Some other warnings:
+luck. If you choose to try it, you are doing so  completely at your own risk.
 </p>
 
 <p>
+Some important warnings:
 <ul>
    <li>
-   <strong>Overheating risk:</strong> This modification might increase the risk of the unit overheating,
-   especially if modified incorrectly. It is easier for the ducted intake hose
-   to become blocked or the flow rate impaired, compared to a wide open grille
-   that was present before.
+   <strong>Overheating risk:</strong> This modification might increase the risk
+   of the unit overheating, especially if modified incorrectly. It is easier
+   for the ducted intake hose to become blocked or the flow rate impaired,
+       compared to a wide open grille that was present before. If you are
+       ducting, make sure to not introduce any flow restrictions.
    </li>
    <li>
-   <strong>Fire safety:</strong> Buy an additional fire alarm to have in the room with the AC. It is likely
-   the room with AC will have the doors closed. If you fall asleep and the
-   machine malfunctions, it'll take seconds for the smoke to fill the room.
-   With the doors closed, it's likely that you'll have already taken in too
-   much smoke to wake up before it's able to reach the normal fire alarms
-   outside the room you're in. Make sure you have on in the same room too.
+   <strong>Fire safety:</strong> Buy an additional fire alarm to have in the
+   room with the AC. It is likely the room with AC will have the doors closed.
+   If you fall asleep and the machine malfunctions, it'll take seconds for the
+   smoke to fill the room.  With the doors closed, it's likely that you'll have
+   already taken in too much smoke to wake up before it's able to reach the
+   normal fire alarms outside the room you're in. You've spent a lot on an AC
+   unit, spend a little extra to make sure you have a fire alarm in the same
+   room as you.
    </li>
    <li>
    <strong>Warranty:</strong> It will almost certainly invalidate any manufacturer warranty.
    </li>
    <li>
-   <strong>High temp materials:</strong> Materials used in the conversion must be able to withstand the same high
-   temperatures as the exhaust hose, just in case they accidentally come in
-   contact.
+   <strong>High temp materials:</strong> Materials used in the conversion must
+   be able to withstand the same high temperatures as the exhaust hose, just in
+   case they accidentally come in contact.
    </li>
 </ul>
 </p>
@@ -413,6 +417,46 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/dual-hose-conversion-matsui-mat-7kacw-window-kit-installed.jpg',
+    :w400
+)
+%>
+</div>
+
+### Sharp CV-H9XR
+Klis has sent in this modification of a Sharp CV-H9XR:
+
+> I got a Sharp CV-H9XR, hoping to make the room habitable, but all it was
+> doing was creating a slightly cool pocket in one corner of the room while
+> making the rest of it even hotter. Also, since I have a casement window, I
+> needed a sealing kit, but the pressure in the room was so low because of the
+> AC, that it kept ripping the seal away from the frame.
+>
+> A few days ago I looked online for what I can do about it and found your
+> article. I decided to try it out and lo and behold, it actually worked! I had
+> some issues, because the unit actually has two intakes, one on the back and
+> one on the side, but with some cardboard and an ungodly amount of duct tape I
+> bridged the two grills and connected them to the outside with an aluminium
+> pipe from the local home improvement store.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-klis-sharp-cvh9xr-top.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-klis-sharp-cvh9xr-rear-upper.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/dual-hose-conversion-klis-sharp-cvh9xr-cardboard-ducting.jpg',
     :w400
 )
 %>
