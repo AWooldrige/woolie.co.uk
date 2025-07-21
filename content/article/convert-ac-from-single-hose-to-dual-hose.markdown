@@ -15,13 +15,13 @@ but will never be able to cool the rest of the room. Single hose ACs are bad
 news for the environment, energy bills and your heatwave comfort!
 
 The problem for UK residents is that single hose ACs are the only type of
-portable model availabl. Dual hose models, [window
+portable model available. Dual hose models, [window
 units](https://en.wikipedia.org/wiki/Air_conditioning#Window_unit_and_packaged_terminal)
 or portable split units are not available, despite their superior
 performance and efficiency.
 
 But what makes single hose ACs so bad? This is a long article, so a table of
-contents to get you to where you need to go:
+contents will help get you to what you need:
 
  * [Background: Air conditioners are refrigerators with fans](#background-air-conditioners-are-refrigerators-with-fans)
  * [What makes single hose ACs so bad?](#what-makes-single-hose-acs-so-bad)
