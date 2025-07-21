@@ -1,10 +1,10 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2024-07-24 20:40:00 +0000
+updated_at: 2025-07-21 21:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
-xcerpt: >-
+excerpt: >-
     Single hose air conditioners are ineffecient by design, but are the only
     portable type available to purchase in the UK. Convert them to dual hose
     for lower energy bills and drastically better cooling performance.
@@ -20,7 +20,24 @@ units](https://en.wikipedia.org/wiki/Air_conditioning#Window_unit_and_packaged_t
 or portable split units are not available, despite their superior
 performance and efficiency.
 
-But what makes single hose ACs so bad?
+But what makes single hose ACs so bad? This is a long article, so a table of
+contents to get you to where you need to go:
+
+ * [Background: Air conditioners are refrigerators with fans](#background-air-conditioners-are-refrigerators-with-fans)
+ * [What makes single hose ACs so bad?](#what-makes-single-hose-acs-so-bad)
+ * [Solution: Convert the single hose AC to dual hose](#solution-convert-the-single-hose-ac-to-dual-hose)
+     * [Will this work with my AC? The flow block test…](#will-this-work-with-my-ac-the-flow-block-test)
+     * [Instructions for conversion after flow block test](#instructions-for-conversion-after-flow-block-test)
+     * [How will I know if the conversion worked?](#how-will-i-know-if-the-conversion-worked)
+     * [Further tips for optimum efficiency](#further-tips-for-optimum-efficiency)
+ * [Known working AC model conversion examples](#known-working-ac-model-conversion-examples)
+     * [Challenge 5K (5,000 BTU)](#challenge-5k-5000-btu)
+     * [Delonghi Pinguino EX120](#delonghi-pinguino-ex120)
+     * [Matsui MAT-7KACW](#matsui-mat-7kacw)
+     * [Sharp CV-H9XR](#sharp-cv-h9xr)
+     * [Dimplex DCP9](#dimplex-dcp9)
+     * [Silvercrest SMK 7000 B2](#silvercrest-smk-7000-b2)
+ * [Converted your model successfully?](#converted-your-model-successfully)
 
 
 ## Background: Air conditioners are refrigerators with fans
@@ -208,7 +225,7 @@ hose are simple:
 
  1. Buy an additional fire alarm to have in the room with the AC. I'm not
     joking about this.
- 1. Source an additional air conditioning hose or equivalent. This should be a
+ 2. Source an additional air conditioning hose or equivalent. This should be a
     similar diameter to the exhaust hose, so that flow rate is not restricted.
     It's also important it is sturdy and suitable for high temperatures, as
     this will be used partially outside in the sunlight on hot days.
@@ -462,8 +479,85 @@ imageThumbnail(
 %>
 </div>
 
+### Dimplex DCP9
+Ashley sent in this successful modification of a Dimplex DCP9:
+
+> I used insulated ducting for the heat outlet which reduces the heat emission
+> from the 5m run and only adds £5 to the cost. It also quietens the unit
+> significantly as the air rush is quite a large contributor to the overall
+> noise output. I've limited the opening of the external air input using clear
+> tape so that it better matches the plastic air inlet "manifold".
+>
+> After this modification the unit can reach the hallway and effectively keep
+> the whole upstairs cool during a heat wave.
+
+
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-06-ashley-dimplex-dcp9-portrait-close-of-box.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-06-ashley-dimplex-dcp9-portrait-rear-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-06-ashley-dimplex-dcp9-window-adapter.jpg',
+    :w400
+)
+%>
+</div>
+
+### Silvercrest SMK 7000 B2
+Teun sent in this successful modification of a Silvercrest SMK 7000 B2:
+
+> I recently bought a portable AC (a cheap Silvercrest 7000 BTU from Lidl) but
+> noticed it didn't work very well at all. A Technology Connections video put
+> me on to the idea of a double hose, which eventually lead me to stumble upon
+> your website. The visual diagrams of single vs double hose units were
+> especially insightful. The photos of successful modifications gave me enough
+> inspiration to make my own. I ordered an extra AC hose and exhaust from Temu
+> for ~10 bucks and built my own adapter out of a sturdy cardboard box (approx
+> the same size as the intake) with a hole cut in it and lots of tape. The AC
+> works very well now! Before, it was basically a very loud and elaborate fan,
+> only creating a pleasant draft in its vicinity. Now, the coldness really
+> starts to spread throughout the room, as it should. I love it.
+
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-07-teun-silvercrest-smk-7000-b2-rear-conversion-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-07-teun-silvercrest-smk-7000-b2-window-adapter.jpg',
+    :w400
+)
+%>
+</div>
+
+
 ---
 
 ## Converted your model successfully?
 If you'd like to help others and include a picture of how to convert your
-specific model on this page, please get in touch using the contact details on the <%= link_to('about page', @items['/about.html']) %>.
+specific model on this page, please get in touch using the contact details on
+the <%= link_to('about page', @items['/about.html']) %>. It's helpful if you
+could let me know:
+
+ 1. What name you'd like to be used, or whether you'd prefer to be anonymous.
+ 2. Whether you're ok with your photos and message being used on the page.
