@@ -301,3 +301,14 @@ blockquote {
     main p { line-height: 2.2rem; }
     pre { padding: 1.2rem; }
 }
+
+<%
+###############################################################################
+# A LEVEL OF SPAM PROTECTION
+# Inspired by:
+# https://spencermortensen.com/articles/email-obfuscation/#text-display
+###############################################################################
+%>
+div.email > span:nth-child(3) {
+    display: none;
+}
