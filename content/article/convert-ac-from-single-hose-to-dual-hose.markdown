@@ -36,7 +36,9 @@ contents will help get you to what you need:
      * [Matsui MAT-7KACW](#matsui-mat-7kacw)
      * [Sharp CV-H9XR](#sharp-cv-h9xr)
      * [Dimplex DCP9](#dimplex-dcp9)
+     * [Blyss A018I-12CH](#blyss-a018i-12ch)
      * [Silvercrest SMK 7000 B2](#silvercrest-smk-7000-b2)
+     * [Silvercrest SMK 7000 B2 (with 3D printed cowl)](#silvercrest-smk-7000-b2-with-3d-printed-cowl)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -517,6 +519,69 @@ imageThumbnail(
 %>
 </div>
 
+
+### Blyss A018I-12CH
+Dawood sent in this successful modification of a Blyss A018I-12CH:
+
+> Inspired by your article on the shortcomings of single hose portable air
+> conditioning units, I thought I’d share my findings with a Blyss portable AC
+> unit from Screwfix.
+>
+> Having used one many years ago, I was well aware of the issues with single
+> hose units,  but I’d forgotten just how bad they were. I thought I’d be able
+> to live with it for a new warm nights, but I was staggered at just how much
+> warm air was being pulled in from the rest of the house and small gaps around
+> the windows. Even with no solar gain and moderate nighttime temperatures, I
+> found the unit had to run almost constantly in a relatively small room.
+>
+> So, I set about modifying my unit. The condenser air intake grille is a
+> curved L-shape, so it was hard to use a Tupperware box like some others have
+> done. The easiest way was to remove the grille (interestingly, there is no
+> filter on my machine) and replace it with cardboard. The unit came with a
+> spigot intended for a through-the-wall installation; this turned out to be a
+> perfect fit for 150mm flexible duct from Toolstation.
+>
+> As a precaution, I rigged up a temperature sensor in the newly created “inlet
+> plenum” and happily, the temperature in there only ever registered a couple
+> of degrees above the outside ambient. I do hope to change the cardboard to
+> something more permanent, when I have the motivation.
+>
+> The result? The unit now only needs to be turned on half an hour before
+> bedtime to cool our bedroom. And it’s much quieter too, thanks to the inlet
+> hose providing some sound attenuation.
+
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-08-dawood-blyss-a018i-12ch-close-up-of-cowl.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-08-dawood-blyss-a018i-12ch-cowl-with-hose-attached.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-08-dawood-blyss-a018i-12ch-cowl-with-temperature-probe.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-08-dawood-blyss-a018i-12ch-installed-in-window.jpg',
+    :w400
+)
+%>
+</div>
+
 ### Silvercrest SMK 7000 B2
 Teun sent in this successful modification of a Silvercrest SMK 7000 B2:
 
@@ -549,6 +614,39 @@ imageThumbnail(
 )
 %>
 </div>
+
+### Silvercrest SMK 7000 B2 (with 3D printed cowl)
+Thomas sent in this successful modification of a Silvercrest SMK 7000 B2, with
+a 3D printed cowl:
+
+> I stumbled across your website while trying to improve the performance of a
+> cheap Lidl unit.
+>
+> It inspired me to design and 3D printed a cowl that receives the standard
+> flexible tubing, and that's held on to the back using bungee cords. Using
+> some weather stripping it's a perfect fit.
+>
+> Given the limited bed size of my old printer, I designed it to be printed in
+> sections and screwed together.
+
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-09-thomas-silvercrest-smk-7000-b2-3d-printed-cowl.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2025-09-thomas-silvercrest-smk-7000-b2-3d-printed-cowl-attached-to-unit-with-bungee-cord.jpg',
+    :w400
+)
+%>
+</div>
+
 
 
 ---
