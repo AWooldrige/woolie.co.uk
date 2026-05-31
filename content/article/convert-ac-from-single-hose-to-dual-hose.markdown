@@ -39,6 +39,8 @@ contents will help get you to what you need:
      * [Blyss A018I-12CH](#blyss-a018i-12ch)
      * [Silvercrest SMK 7000 B2](#silvercrest-smk-7000-b2)
      * [Silvercrest SMK 7000 B2 (with 3D printed cowl)](#silvercrest-smk-7000-b2-with-3d-printed-cowl)
+     * [ElectriQ Airflex15-v2](#electriq-airflex15-v2)
+     * [HOMCOM 5000BTU](#homcom-5000btu)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -647,6 +649,68 @@ imageThumbnail(
 %>
 </div>
 
+
+### ElectriQ Airflex15-v2
+A successful modification of an ElectriQ Airflex15-v2 was sent in:
+
+> I have successfully modified my unit into a dual-hose, using a simple cowling box.
+>
+> It is an ElectriQ Airflex15-v2.
+>
+> Unfortunately, this unit is no longer sold.
+>
+> As an aside, I believe (although I cannot confirm) that a model currently sold (iPAC-40) is extremely similar to my unit and can probably be modified in exactly the same way.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-05-anon-electriq-airflex15-v2-side-view-showing-cowling-attached-to-ac.jpg',
+    :w400
+)
+%>
+</div>
+
+
+# HOMCOM 5000BTU
+Samy sent in this successful modification of a HOMCOM 5000BTU:
+
+> I recently discovered the issues with single hose ACs during a heatwave and, after coming across your page, made the decision to convert mine.
+>
+> It's a Homcom 5000BTU, I've cut a hole in a tupperware container, stuck a flange through it, and stuck the hose through that with HVAC tape to seal everything. The idea is that I can pop this off whenever I need to store it and that the regular grille is there to catch anything that gets picked up.
+>
+> I'm waiting on a tall table and an acrylic window seal to reach the window and add more space where the AC will be. Overall it's pretty affordable, still portable, and it works.
+>
+> As for anyone who would like to do the same:
+>
+> - Araven Square Food Container & Lid 6 Litre is the container I used. It sits right within the grille's borders, so you can tape over the remaining edge and leave the clips free (with the right tape it will hold)
+> - I cut the hole by marking it around the flange and using a heated knife to melt through it bit by bit
+> - I sanded any edges and covered them with tape afterward to ensure nothing loose could be picked up
+> - I avoided using tape in areas where something wasn't blocking their entry to the intake (if the tape came loose)
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-05-samy-homcom-5000btu-modification-attached-to-ac-unit.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-05-samy-homcom-5000btu-modular-unit-which-can-be-attached.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-05-samy-homcom-5000btu-view-through-grille.jpg',
+    :w400
+)
+%>
+</div>
 
 
 ---
