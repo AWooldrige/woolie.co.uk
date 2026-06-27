@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2025-09-08 22:00:00 +0000
+updated_at: 2026-06-27 22:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -41,6 +41,7 @@ contents will help get you to what you need:
      * [Silvercrest SMK 7000 B2 (with 3D printed cowl)](#silvercrest-smk-7000-b2-with-3d-printed-cowl)
      * [ElectriQ Airflex15-v2](#electriq-airflex15-v2)
      * [HOMCOM 5000BTU](#homcom-5000btu)
+     * [Inventor Magic M2GHP290-12](#inventor-magic-m2ghp290-12)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -672,7 +673,7 @@ imageThumbnail(
 </div>
 
 
-# HOMCOM 5000BTU
+### HOMCOM 5000BTU
 Samy sent in this successful modification of a HOMCOM 5000BTU:
 
 > I recently discovered the issues with single hose ACs during a heatwave and, after coming across your page, made the decision to convert mine.
@@ -707,6 +708,71 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-05-samy-homcom-5000btu-view-through-grille.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### Inventor Magic M2GHP290-12
+A successful modification of an Inventor Magic M2GHP290-12 (also sold as the Wessex):
+
+> I've converted my 12000 BTU Inventor Magic (otherwise known as Wessex) to dual hose.
+>
+> The Inventor model is M2GHP290-12 (quite annoyingly they don't sell the dual
+> hose variant M2GHP290-12BS in the UK - photo from the manual is included). I
+> purchased a lightweight hose with the same 150mm diameter as the hot air hose
+> from Toolstation \[150mm PVC flexible ducting hose\], then simply used double
+> sided tape, then duct tape to attach the intake hose and block the other inputs.
+>
+> I then used Lidl reflective insulating roll to cover the hot air hose, as it
+> radiates heat at 50C. That same reflective roll is used to crudely cover the
+> outside of the velux window, which is the main source of radiative heat into
+> the room.
+>
+> The room is a loft room, that is boiling hot in the summer. Within 20 minutes
+> the air temperature dropped 2C, and in 35 minutes it dropped another 1C.
+>
+> It used to take over an hour or two to drop by 1C.
+>
+> When I have more money I'd like to buy this kit for the intake hose
+> \[3-metre vent hose extension kit for portable AC units, eBay\] and order a
+> custom acrylic window slab with circular cutouts \[custom-size 4mm acrylic AC
+> window seal, plasticsheetsshop.co.uk\] (rather than using the fabric window kit)
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-inventor-magic-m2ghp290-12-manual-showing-single-and-dual-hose-variants.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-inventor-magic-m2ghp290-12-front-view-with-both-hoses.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-inventor-magic-m2ghp290-12-intake-hose-attached-with-tape.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-inventor-magic-m2ghp290-12-intake-hose-attached-with-tape-wide.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-inventor-magic-m2ghp290-12-velux-window-with-reflective-covering.jpg',
     :w400
 )
 %>
