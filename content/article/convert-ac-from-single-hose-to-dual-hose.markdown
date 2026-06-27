@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-06-27 22:00:00 +0000
+updated_at: 2026-06-27 23:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -42,6 +42,7 @@ contents will help get you to what you need:
      * [ElectriQ Airflex15-v2](#electriq-airflex15-v2)
      * [HOMCOM 5000BTU](#homcom-5000btu)
      * [Inventor Magic M2GHP290-12](#inventor-magic-m2ghp290-12)
+     * [Garvee CF10 (TAC-10CPB/DM7)](#garvee-cf10-tac-10cpbdm7)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -773,6 +774,47 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-06-anon-inventor-magic-m2ghp290-12-velux-window-with-reflective-covering.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### Garvee CF10 (TAC-10CPB/DM7)
+A successful modification of a Garvee CF10 (TAC-10CPB/DM7):
+
+> Great page - I found a free model \[dual-hose adapter kit for the Acecool U-A on MakerWorld\] for another make that I could 3D print which
+> pretty much fitted my AliExpress-special AC.
+>
+> I didn't disassemble the device to ensure it was completely sealed, but it
+> has got to be better than how it was!
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-garvee-cf10-tac-10cpb-dm7-label-showing-model-and-specs.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-garvee-cf10-tac-10cpb-dm7-front-view-after-conversion.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-garvee-cf10-tac-10cpb-dm7-close-up-of-second-hose-and-modified-grille.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-anon-garvee-cf10-tac-10cpb-dm7-rear-view-after-conversion.jpg',
     :w400
 )
 %>
