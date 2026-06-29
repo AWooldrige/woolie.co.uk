@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-06-27 23:00:00 +0000
+updated_at: 2026-06-29 23:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -43,6 +43,7 @@ contents will help get you to what you need:
      * [HOMCOM 5000BTU](#homcom-5000btu)
      * [Inventor Magic M2GHP290-12](#inventor-magic-m2ghp290-12)
      * [Garvee CF10 (TAC-10CPB/DM7)](#garvee-cf10-tac-10cpbdm7)
+     * [ElectriQ AC9000E](#electriq-ac9000e)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -815,6 +816,71 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-06-anon-garvee-cf10-tac-10cpb-dm7-rear-view-after-conversion.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### ElectriQ AC9000E
+Rob sent in this successful modification of an ElectriQ AC9000E:
+
+> I was inspired to try and dual hose my electriq AC 9000, which is a pretty
+> basic machine but after reading your website, I thought I'd give it a try.
+>
+> I think it's working! It seems to help take the edge off the heat and work
+> more effectively.
+>
+> I basically taped some 150mm flanges to the thick cardboard and secured the
+> hoses with jubilee clips.
+>
+> I just need to figure out how to make the window setup more portable. We have
+> these small top opening windows. If it's more portable I can easily move it
+> between rooms. Anyways, thanks for the inspiration.
+
+Note the standoff around the edges of the cardboard ducting, this is to keep the
+cardboard from sitting flush against the grille and restricting airflow.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-completed-view-with-both-hoses-out-window.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-side-view-showing-cardboard-ducting-with-standoff.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-inside-ducting-showing-standoff-around-edges.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-condenser-intake-grille.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-evaporator-intake-grille.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-06-rob-electriq-ac9000e-info-panel-showing-model-and-specs.jpg',
     :w400
 )
 %>
