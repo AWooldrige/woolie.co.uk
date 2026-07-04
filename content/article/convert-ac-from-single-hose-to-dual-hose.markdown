@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-06-29 23:00:00 +0000
+updated_at: 2026-07-04 23:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -44,6 +44,7 @@ contents will help get you to what you need:
      * [Inventor Magic M2GHP290-12](#inventor-magic-m2ghp290-12)
      * [Garvee CF10 (TAC-10CPB/DM7)](#garvee-cf10-tac-10cpbdm7)
      * [ElectriQ AC9000E](#electriq-ac9000e)
+     * [Kingfisher WAP31A15E (5000 BTU)](#kingfisher-wap31a15e-5000-btu)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -881,6 +882,77 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-06-rob-electriq-ac9000e-info-panel-showing-model-and-specs.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### Kingfisher WAP31A15E (5000 BTU)
+Patrick sent in this successful modification of a Kingfisher WAP31A15E 5000 BTU portable air
+conditioner. This unit is sold unbranded at both B&Q and Screwfix (Screwfix product code 931AX),
+and is manufactured by Kingfisher International Products. It may also be associated with
+Kingfisher's Blyss appliance lineup.
+
+> The air conditioner is an unbranded 5000 BTU sold at Screwfix and B&Q. The brand might technically be
+> Kingfisher (owner of screwfix and b&q) and model is WAP31A15E according to the manual.
+>
+> Window board is inspired by Matthew's from your blog post. These cheap generic air con connectors from
+> aliexpress fit very well using wickes 5.5mm plywood. Mark out two circles from the same center, with
+> diameters 140mm and 150mm, then use them as a guide to cut out this shape (faintly pencilled in one of
+> the attached photos).
+>
+> The rest of it is foil tape, another type of aliexpress connector for the intake, and a makeshift window
+> sill extension to save floor space.
+>
+> One thing i might still change is adding a second 150mm hose for the intake, as I have read it might be
+> starving the compressor a bit. Might be something to consider particularly for higher BTU units.
+
+A note for others with similar models: the foil tape in this example covers a portion of the
+grille to create a seal around the connector. When doing this, aim to make sure at least 75% of
+the grille area remains open and unobstructed. Sealing too much of the grille could introduce a
+flow restriction at the intake, reducing performance (see Patrick's note in the message).
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-ac-after-conversion-front-view-with-hoses-out-window.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-rear-view-of-converted-unit-with-ducted-intake.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-window-board-markings-before-cutting-hole.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-window-board-after-hole-cut.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-window-board-thread-fitted-inside-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-patrick-kingfisher-wap31a15e-window-board-thread-fitted-outside-view.jpg',
     :w400
 )
 %>
