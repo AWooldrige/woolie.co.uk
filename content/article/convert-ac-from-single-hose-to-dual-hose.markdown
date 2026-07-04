@@ -325,6 +325,14 @@ in the room should be cool to the touch and feel like a fridge.
    reason too, as hot air rises slightly.
  * Keep the length of the hoses short, to minimise losses back into the room.
    Move the unit as close to the window as possible.
+ * Keep the filters clean. Most portable ACs have a filter on the evaporator
+   (cold side) intake and some have one on the condenser side too. Check your
+   manual and clean them regularly; monthly during heavy use is a reasonable
+   starting point. This is especially important after the conversion, because
+   any ducting you've built over the condenser intake now hides the filter from
+   view. Out of sight out of mind, and a blocked filter will quietly block
+   the airflow and undo a lot of the efficiency gains you've just worked to
+   achieve.
 
 
 ---
