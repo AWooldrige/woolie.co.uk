@@ -144,28 +144,66 @@ the outside air, it will perform with the same efficiency as a dual hose unit.
 I am not an expert on air conditioners, safety or anything related. You must be
 aware that you are following instructions from some random person on the
 internet that spent 20 minutes with cardboard, duck tape, trial, error and some
-luck. If you choose to try it, you are doing so  completely at your own risk.
+luck. If you choose to try it, you are doing so completely at your own risk.
 </p>
 
 <p>
 Some important warnings:
 <ul>
    <li>
+   <strong>No liability:</strong> Everything on this page is done at your own
+   risk. By choosing to follow any of these instructions you accept full and
+   sole responsibility for any and all outcomes, including but not limited to
+   property damage, personal injury, or death. I'm just some person on the
+   internet that had a personal project work well and wanted to share it to
+   help others stay cool in the heat. I accept zero liability for any outcome.
+   If you're not comfortable with that, don't proceed.
+   </li>
+   <li>
+   <strong>Flow restriction:</strong> The most common mistake with this
+   conversion is not ducting well enough and accidentally restricting the
+   airflow into the condenser intake. The original grille was wide open; your
+   adapter needs to match that as closely as possible. Seal up as little of the
+   grille as you can get away with, just enough to make a good connection for
+   the hose. Any restriction on the intake reduces cooling performance and puts
+   more strain on the whole AC system.
+   Also make sure the intake hose itself is at least as rigid as the exhaust
+   hose already on the unit, ideally more so. Unlike the exhaust hose, which is
+   under positive pressure, the intake hose is under suction. Suction can
+   collapse a hose that isn't sturdy enough. This risk is higher on the hottest
+   days of the year, when the heat softens most materials and makes collapse
+   more likely. A collapsed intake hose means no airflow, which means the
+   condenser will overheat.
+   </li>
+   <li>
    <strong>Overheating risk:</strong> This modification might increase the risk
    of the unit overheating, especially if modified incorrectly. It is easier
    for the ducted intake hose to become blocked or the flow rate impaired,
-       compared to a wide open grille that was present before. If you are
-       ducting, make sure to not introduce any flow restrictions.
+   compared to a wide open grille that was present before. If you are ducting,
+   make sure to not introduce any flow restrictions.
    </li>
    <li>
-   <strong>Fire safety:</strong> Buy an additional fire alarm to have in the
-   room with the AC. It is likely the room with AC will have the doors closed.
-   If you fall asleep and the machine malfunctions, it'll take seconds for the
-   smoke to fill the room.  With the doors closed, it's likely that you'll have
-   already taken in too much smoke to wake up before it's able to reach the
-   normal fire alarms outside the room you're in. You've spent a lot on an AC
-   unit, spend a little extra to make sure you have a fire alarm in the same
-   room as you.
+   <strong>Thermostat probe location:</strong> If the thermostat temperature
+   probe happens to be on the condenser (hot) side intake rather than the
+   evaporator (cold) side, once it's ducted it'll measure outside air
+   temperature instead of the room, so it'll never think the room is cool
+   enough and the compressor will run continuously. Check the flow block test
+   section below before proceeding.
+   </li>
+   <li>
+   <strong>Fire safety:</strong> Buy a fire alarm for the room with the AC.
+   This recommendation stands whether or not you're doing this modification.
+   If you're sleeping in a room with any electrical appliance running, a fire
+   alarm in that room is just a sensible idea. With the doors closed, smoke
+   fills a room very quickly. The alarms in the rest of the house won't
+   help you in time. You've spent a lot on an AC unit, spend a little extra on
+   a fire alarm too. During the first few uses after the conversion, don't
+   leave it running unattended for extended periods until you're satisfied
+   everything is working as expected.
+   </li>
+   <li>
+   <strong>Electrical safety:</strong> Don't open or tamper with the internal
+   wiring of the unit.
    </li>
    <li>
    <strong>Warranty:</strong> It will almost certainly invalidate any manufacturer warranty.
@@ -232,14 +270,23 @@ Once aware of the risks, the steps to convert the unit from single hose to dual
 hose are simple:
 
  1. Buy an additional fire alarm to have in the room with the AC. I'm not
-    joking about this.
+    joking about this, see the warnings section.
  2. Source an additional air conditioning hose or equivalent. This should be a
     similar diameter to the exhaust hose, so that flow rate is not restricted.
     It's also important it is sturdy and suitable for high temperatures, as
-    this will be used partially outside in the sunlight on hot days.
+    this will be used partially outside in the sunlight on hot days. Unlike the
+    exhaust hose which is under positive pressure, the intake hose is under
+    suction. Suction can collapse a hose that isn't rigid enough. On the
+    hottest days of the year the heat softens materials further, making collapse
+    more likely. Use a hose that is at least as rigid as the exhaust hose
+    already on the unit, ideally more so.
  3. Create an adapter to duct the condenser (hot) air intake that you
     identified earlier, into the additional air conditioning hose, so that it
-    draws air from the outside instead of inside. Make sure it's a good seal.
+    draws air from the outside instead of inside. Make sure it's a good seal,
+    but block up as little of the grille as you can get away with. The original
+    grille was wide open and your adapter needs to keep as much of it
+    unobstructed as possible. Any unnecessary restriction on the intake reduces
+    cooling performance and puts more strain on the whole AC system.
  4. Place the new hose through to the outside along with your exhaust hose
      * Ensure there is enough distance so that the hot air of the exhaust
         isn't being drawn straight into your new intake.
