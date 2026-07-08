@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-07-04 23:00:00 +0000
+updated_at: 2026-07-08 23:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -45,6 +45,7 @@ contents will help get you to what you need:
      * [Garvee CF10 (TAC-10CPB/DM7)](#garvee-cf10-tac-10cpbdm7)
      * [ElectriQ AC9000E](#electriq-ac9000e)
      * [Kingfisher WAP31A15E (5000 BTU)](#kingfisher-wap31a15e-5000-btu)
+     * [TRONIC TLK 7000 C2](#tronic-tlk-7000-c2)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -1008,6 +1009,36 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-07-patrick-kingfisher-wap31a15e-window-board-thread-fitted-outside-view.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### TRONIC TLK 7000 C2
+Félix sent in this successful modification of a TRONIC TLK 7000 C2, a 7000 BTU portable air
+conditioner sold by Lidl in France, Germany and the UK:
+
+> Many thanks for the AC tutorial. I managed to pull it off on a TRONIC 7000 BTU - the cheapest AC
+> you can find in france atm. works wonders, even though my flat is still too wide for the cold air
+> flux.
+>
+> I aim at upgrading it soon to some tupperware; we'll see.
+
+Using a box of Honey Wheats as a ducting adapter is one of my favourites so far.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-felix-tronic-tlk-7000-c2-rear-view-showing-honey-wheats-hose-adapter.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-felix-tronic-tlk-7000-c2-front-view-showing-completed-conversion-with-dual-hoses-out-of-window.jpg',
     :w400
 )
 %>
