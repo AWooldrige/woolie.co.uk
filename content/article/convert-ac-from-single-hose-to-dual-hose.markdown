@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-07-08 23:00:00 +0000
+updated_at: 2026-07-11 23:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -46,6 +46,7 @@ contents will help get you to what you need:
      * [ElectriQ AC9000E](#electriq-ac9000e)
      * [Kingfisher WAP31A15E (5000 BTU)](#kingfisher-wap31a15e-5000-btu)
      * [TRONIC TLK 7000 C2](#tronic-tlk-7000-c2)
+     * [MeacoCool MC12000CHR Pro](#meacocool-mc12000chr-pro)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
 
@@ -1039,6 +1040,49 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-07-felix-tronic-tlk-7000-c2-front-view-showing-completed-conversion-with-dual-hoses-out-of-window.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### MeacoCool MC12000CHR Pro
+Ian sent in this successful modification of a MeacoCool MC12000CHR Pro:
+
+> I've managed to box my air intake on my MeacoCool MC12000 Pro ch. I used cardboard for now and
+> a few miles of gaffer tape.. I plan to make it in plastic now i know it works. It is day and
+> night difference. The noise has halved and it has dropped the temperature in the room by 2° in
+> half hour. No more hot air being sucked in the room around the doors and from the kitchen
+> cupboards on the outside wall. Its got a slightly smaller diameter hose on the intake atm. As
+> its the only one I had to hand. Ive ordered another 150mm one and will be using that when it
+> lands.
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-ian-meacocool-mc12000chr-pro-cardboard-box-ducting-rear-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-ian-meacocool-mc12000chr-pro-completed-conversion-side-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-ian-meacocool-mc12000chr-pro-completed-conversion-rear-view.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-07-ian-meacocool-mc12000chr-pro-completed-conversion-front-view-with-hoses-out-of-window.jpg',
     :w400
 )
 %>
