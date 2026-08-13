@@ -4,3 +4,4 @@ tmp/
 crash.log
 .bundle/
 vendor/
+.venv/

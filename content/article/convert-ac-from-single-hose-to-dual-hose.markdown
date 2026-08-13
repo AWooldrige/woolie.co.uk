@@ -1,7 +1,7 @@
 ---
 title: "Single hose air conditioners can't cool a room: Convert them to dual hose"
 created_at: 2020-06-29 22:00:00 +0000
-updated_at: 2026-07-11 23:00:00 +0000
+updated_at: 2026-08-13 22:00:00 +0000
 kind: article
 feature_image: /article/convert-ac-from-single-hose-to-dual-hose/challenge-dual-hose-conversion-rear-view.jpg
 excerpt: >-
@@ -46,6 +46,7 @@ contents will help get you to what you need:
      * [ElectriQ AC9000E](#electriq-ac9000e)
      * [Kingfisher WAP31A15E (5000 BTU)](#kingfisher-wap31a15e-5000-btu)
      * [TRONIC TLK 7000 C2](#tronic-tlk-7000-c2)
+     * [TRONIC TLK 7000 C2 (with 3D printed cowl)](#tronic-tlk-7000-c2-with-3d-printed-cowl)
      * [MeacoCool MC12000CHR Pro](#meacocool-mc12000chr-pro)
  * [Converted your model successfully?](#converted-your-model-successfully)
 
@@ -1040,6 +1041,67 @@ imageThumbnail(
 imageThumbnail(
     item.identifier.without_ext +
     '/2026-07-felix-tronic-tlk-7000-c2-front-view-showing-completed-conversion-with-dual-hoses-out-of-window.jpg',
+    :w400
+)
+%>
+</div>
+
+
+### TRONIC TLK 7000 C2 (with 3D printed cowl)
+Rein sent in this successful modification of a TRONIC TLK 7000 C2, after
+finding out that this machine is the same as the Silvercrest SMK 7000 B2
+further up the page but under a different brand. Rein got in touch to ask
+about the 3D printed cowl that Thomas designed and had one printed:
+
+> It has been a while, but I finally got someone to print the duct for me!
+>
+> I glued and screwed the pieces together, and even added aluminium tape on the inside for heat
+> protection and a bit of rigidity. It works very well! It has improved the cooling capability of
+> the unit a lot. I use a wood plank in the window that blocks out all the air, and funnels the two
+> hoses to the outside world.
+
+The window setup uses a sturdy board:
+
+> I cover up the hoses with a thick towel and then the curtains to cover the window. I try to keep
+> the hoses as short as posible, so my unit is on a stool.
+>
+> Also, yes, the unit has eyes. His name is Daniel, or Dan if you like.
+
+Dan can be seen keeping an eye on the flow in the last photo, ha!
+
+<div class='gallery'>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-08-rein-tronic-tlk-7000-c2-3d-printed-cowl-hose-end.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-08-rein-tronic-tlk-7000-c2-looking-into-the-wide-open-end-of-the-cowl.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-08-rein-tronic-tlk-7000-c2-cowl-fitted-to-the-rear-of-the-unit-held-on-with-a-blue-bungee-cord.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-08-rein-tronic-tlk-7000-c2-cowl-fitted-to-the-rear-of-the-unit-with-hose-attached.jpg',
+    :w400
+)
+%>
+<%=
+imageThumbnail(
+    item.identifier.without_ext +
+    '/2026-08-rein-tronic-tlk-7000-c2-window-setup-wooden-board-with-both-hoses-run-outside.jpg',
     :w400
 )
 %>
